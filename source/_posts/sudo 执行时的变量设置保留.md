@@ -1,0 +1,6 @@
+title: sudo 执行时的变量设置保留
+date: 2012-12-26 23:58:37
+tags: LINUX
+---
+
+现象：我们在linux下使用sudo命令的时候，经常发现缺少一些变量，导致程序执行报错.比如python程序fly，当前的用户是tom， 执行fly需要sudo权限执行，那么直接sudo fly 会报错，缺少相应的模块，只是因为对应的pythonpath的设置缺少，但是如果你仅仅export当前环境，执行sudo还是会报错，原因：问题就在于sudo的执行使得的环境变量进行了重置，所以相应的执行环境中无法找到对应的pythonpath， 解决：简单的一种方法是，修改/etc/sudoers文件, 添加如下的设置Defaults        env_keep += PYTHONPATH这里的PYTHONPATH只要是tom用户可以看到就行，比如你在~/.bashrc或profile中设置类似的变量。Refer:1) http://superuser.com/questions/232231/how-do-i-make-sudo-preserve-my-environment-variables2) http://stackoverflow.com/questions/7969540/pythonpath-not-working-for-sudo-on-gnu-linux-works-for-root现象：我们在linux下使用sudo命令的时候，经常发现缺少一些变量，导致程序执行报错.比如python程序fly，当前的用户是tom， 执行fly需要sudo权限执行，那么直接sudo fly 会报错，缺少相应的模块，只是因为对应的pythonpath的设置缺少，但是如果你仅仅export当前环境，执行sudo还是会报错，原因：问题就在于sudo的执行使得的环境变量进行了重置，所以相应的执行环境中无法找到对应的pythonpath， 解决：简单的一种方法是，修改/etc/sudoers文件, 添加如下的设置Defaults        env_keep += PYTHONPATH这里的PYTHONPATH只要是tom用户可以看到就行，比如你在~/.bashrc或profile中设置类似的变量。Refer:1) http://superuser.com/questions/232231/how-do-i-make-sudo-preserve-my-environment-variables2) http://stackoverflow.com/questions/7969540/pythonpath-not-working-for-sudo-on-gnu-linux-works-for-root
