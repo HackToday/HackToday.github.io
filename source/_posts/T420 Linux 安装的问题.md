@@ -1,0 +1,7 @@
+title: T420 Linux 安装的问题
+date: 2011-11-14 20:29:13
+tags: LINUX
+---
+
+
+						问题一,因为软件兼容问题，需要安装ubuntu 10.04，但是这个版本的Linux对T420的支持的并不好。 操作系统安装后发现无法上网，网卡无法识别。查资料发现，需要安装一个e1000e的驱动，于是下载最新的版本：http://sourceforge.net/projects/e1000/files/e1000e%20stable/安装里面的README说明，解决了上网问题。问题二，AT&T VPN client问题，不知道是因为ubuntu版本缘故还是怎么的，11.10是能使用http://huang.yunsong.net/2008/att-network-client-ubuntu.html说的发现是可行的，但是10.04怎么就是不行，出现Kill VPN的错误，好吧。继续搜索，发现一个顶用的信息：http://www.attnetclient.com/forum/viewtopic.php?t=715解决问题问题三，Java plugin for Firefox brower因为使用的是openjdk，所以需要新的插件，sudo apt-get install icedtea6-plugin如果是sun的jdk那么就用ubuntu wiki的说明：http://wiki.ubuntu.org.cn/Qref/More#.E7.BC.96.E8.AF.91.E7.8E.AF.E5.A2.83.E9.85.8D.E7.BD.AE本人还是跟随ubuntu推荐的openjdk算了，不跟sun凑热闹了。问题四，显卡的分辨率低，还是ubuntu 10.04的驱动问题，11.10是没有问题的，好吧，那我就编译3.0内核试试，因为1024*768的分辨率实在无法忍受。编译内核需要注意的问题，1） 一个是 mdio-gpio的already register的问题，虽然不影响进入操作系统，但是每次都打印一行这种信息，很碍眼。所以，为了避免编译内核出现这种问题，那么就需要，将 MDIO_GPIO 这一项的config配置成 编译成模块，默认的是编译进内核。这样就不会出现这个问题了。2） 对于显卡的问题，编译内核的时候注意nvidia，intel的显卡相关的选项都配成编译成模块,或者编译进内核.还有一个Laptop Hybrid Graphics 选上，毕竟这个T420是支持双显卡的。3） 关于编译后出现的module dep的问题，我在自己的前面的内核编译中讲过处理的办法，这里不再说明。4）编译后的有个问题是声卡正常，外音没有，耳机插入有声音。 好吧，这个暂时可以忍受。5） 无线网卡也可以识别出来，自己进行配置选取可行的网络，即可。6） 编译后的显卡直接是1600*900， 没有其他的选项，有点不足，不过比1024*768的好多了。                                   
