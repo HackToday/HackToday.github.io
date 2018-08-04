@@ -21,11 +21,12 @@ source:http://docs.opscode.com/chef_overview.html
 
 下面我们介绍如何实施一个代表性的环境
 
-环境的前提配置
-        安装的OS环境： Ubuntu 12.04
-        虚拟化软件： VirtualBox
-        使用的网络类型： Host-Only NAT
-        假设用户都自己配置好了， 主机对应的FQDN
+环境的前提配置:
+
+- 安装的OS环境： Ubuntu 12.04
+- 虚拟化软件： VirtualBox
+- 使用的网络类型： Host-Only NAT
+- 假设用户都自己配置好了， 主机对应的FQDN
 
 1. server 的安装 
 
@@ -76,16 +77,16 @@ http://docs.opscode.com/install_server.html 过程比较简单， 就是安装�
 
 	在 chef-repo目录下，创建.chef目录，并且修改.gitignore文件，添加 .chef
 
-
     2.4 配置：
 
     ```
     knife configure --initial
 	```
 
-	**注意：** 输入相关的信息，主要是server的url，client的key，client注册server所需要的validator和validator private key
-	（默认的是chef-validator和server端 /etc/chef/validation.pem 文件）还有admin的private key，所以我们需要从server端copy两个文件
-	到workstation机器上，（才能在运行knife configure输入恰当的private key 信息）
+	**注意：** 输入相关的信息，主要是server的url，client的key，client注册server所需要的validator和
+    validator private key（默认的是chef-validator和server端 /etc/chef/validation.pem 文件）
+    还有admin的private key，所以我们需要从server端copy两个文件到workstation机器上，
+    （才能在运行knife configure输入恰当的private key 信息）
 
 	admin 和 validator的private key 文件，即： admin.pem validation.pem，
 
@@ -116,7 +117,6 @@ http://docs.opscode.com/install_server.html 过程比较简单， 就是安装�
 
    下面的是在workstation上运行的，比较简单：
 
-
     3.1 bootstrap
 
 	```
@@ -137,8 +137,6 @@ http://docs.opscode.com/install_server.html 过程比较简单， 就是安装�
 	（依靠FQDN，就是你配置的server url),那么就意味着， node需要安装ssh server； node是可以解析server的FQDN的，
 	可以在/etc/hosts添加相应的信息
 
-
-
 总结：
 
 经过1,2,3步骤，我们就搭建一个典型的chef 环境，包括三个节点，server， workstation和node
@@ -146,8 +144,8 @@ http://docs.opscode.com/install_server.html 过程比较简单， 就是安装�
 
 其他参考资料：
 
-1.http://www.opscode.com/blog/2013/03/11/chef-11-server-up-and-running/
-2.http://dev.classmethod.jp/server-side/chef-server-install/
-3.http://docs.opscode.com/install.html
-4.http://docs.opscode.com/chef_overview.html
-5.http://jtimberman.housepub.org/blog/2013/02/10/install-chef-11-server-on-centos-6/
+1. http://www.opscode.com/blog/2013/03/11/chef-11-server-up-and-running/
+2. http://dev.classmethod.jp/server-side/chef-server-install/
+3. http://docs.opscode.com/install.html
+4. http://docs.opscode.com/chef_overview.html
+5. http://jtimberman.housepub.org/blog/2013/02/10/install-chef-11-server-on-centos-6/
