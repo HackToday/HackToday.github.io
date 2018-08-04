@@ -130,10 +130,8 @@ http://docs.opscode.com/install_server.html 过程比较简单， 就是安装�
 
 	```
 
-	正确的话，就会输出你的node节点的名字FQDN
-
-
-	注意：因为workstation 在bootstrap的时候是需要ssh到node的，而且node也是需要到server访问的
+	正确的话，就会输出你的node节点的名字FQDN。
+	**注意：** 因为workstation 在bootstrap的时候是需要ssh到node的，而且node也是需要到server访问的
 	（依靠FQDN，就是你配置的server url),那么就意味着， node需要安装ssh server； node是可以解析server的FQDN的，
 	可以在/etc/hosts添加相应的信息
 
