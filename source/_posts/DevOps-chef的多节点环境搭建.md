@@ -127,7 +127,6 @@ http://docs.opscode.com/install_server.html 过程比较简单， 就是安装�
 
     ```
     knife client list
-
 	```
 
 	正确的话，就会输出你的node节点的名字FQDN。
