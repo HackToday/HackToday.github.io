@@ -43,40 +43,42 @@ f3ca5cd8c307        training/webapp:latest     /bin/bash     24 minutes ago     
 
 5. Docker的数据管理及使用       
 
- docker的Data volumes功能可以
- （1）对container进行方便的volume创建，
- （2）对host的目录进行快捷的mount到container
- （3）不同container之间通过volume进行数据共享
- （4）对data volume进行方便的backup，restore和migrate
+ docker的Data volumes功能可以:
+ 
+ - 对container进行方便的volume创建，
+ - 对host的目录进行快捷的mount到container
+ - 不同container之间通过volume进行数据共享
+ - 对data volume进行方便的backup，restore和migrate
 
 例如：
 
-(1-1) 创建一个名字是dbdata的container包含dbdata的volume
+- 创建一个名字是dbdata的container包含dbdata的volume
 
 ```
 sudo docker run -i -t -v /dbdata --name dbdata training/postgres /bin/bash
 ```
 
-(1-2) 对上面的container的/dbdata挂载到新的container db1上
+- 对上面的container的/dbdata挂载到新的container db1上
 
 ```
 sudo docker run -i -t  --volumes-from dbdata --name db1 training/postgres /bin/bash
 ```
 
-backup 和 restore
-(1-1) 首先启动一个新的container来对dbdata的data volume数据打包备份到host的当前目录下
+backup 和 restore:
+
+1. 首先启动一个新的container来对dbdata的data volume数据打包备份到host的当前目录下
 
 ```
 sudo docker run --volumes-from dbdata -v $(pwd):/backup training/postgres tar cvf /backup/backup.tar /dbdata
 ```
 
-(1-2) 创建一个用来restore上面数据的container，名字是dbdata2
+2. 创建一个用来restore上面数据的container，名字是dbdata2
 
 ```
 sudo docker run -v /dbdata --name dbdata2  training/postgres /bin/bash
 ```
 
-(1-3) un-tar到新创建的container的data volume中
+3. un-tar到新创建的container的data volume中
 
 ```
 sudo docker run --volumes-from dbdata2 -v $(pwd):/backup training/postgres tar xvf /backup/backup.tar

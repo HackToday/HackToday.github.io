@@ -10,14 +10,13 @@ tags: LINUX
    Redhat 对一些特定的case给与了支持，但是支持的力度有限 https://access.redhat.com/node/637583/
 
 3. 在Redhat Summit上
-
    http://rhsummit.files.wordpress.com/2014/04/cantrell_w_1650_migrating_and_upgrading_rhel.pdf
 
-	Redhat官方的升级资料有个可恶的问题就是，给出的升级包没有下载的连接，不知道是不是需要什么subscription number 才能看到？
-	所以就索性按照Damian Zaremba写的关于 centos 6.5升级到7的步骤执行： http://damianzaremba.co.uk/
+   Redhat官方的升级资料有个可恶的问题就是，给出的升级包没有下载的连接，不知道是不是需要什么subscription number 才能看到？
+   所以就索性按照Damian Zaremba写的关于 centos 6.5升级到7的步骤执行： http://damianzaremba.co.uk/
 
-	```
-	1. yum update 
+```
+    1. yum update 
 
 	2. yum localinstall preupgrade-assistant-1.0.2-36.0.1.el6.centos.x86_64.rpm
 
@@ -41,7 +40,7 @@ tags: LINUX
 	Finished. Reboot to start upgrade.
 
 	6. Reboot
-	```
+```
 
 悲剧的是重启后，发现系统根本起不来，不能load image.
 因为原来系统做过快照，所以恢复一次，重试还是出现同样的问题，以亲身经历验证这个依靠centos的包升级不靠谱。
