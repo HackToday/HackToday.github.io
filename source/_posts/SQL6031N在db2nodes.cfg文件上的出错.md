@@ -11,9 +11,7 @@ SQL6031N 在 db2nodes.cfg 文件的行号 "1" 上出错....
 ```
 显然错误的原因很明显，那就研究一下这个db2nodes.cfg
 
-查了一下 DB2的官方文档，
-
-`http://pic.dhe.ibm.com/infocenter/db2luw/v9r7/index.jsp?topic=%2Fcom.ibm.db2.luw.qb.server.doc%2Fdoc%2Fr0006351.html`
+查了一下 DB2的官方文档，http://pic.dhe.ibm.com/infocenter/db2luw/v9r7/index.jsp?topic=%2Fcom.ibm.db2.luw.qb.server.doc%2Fdoc%2Fr0006351.html
 
 这里面涉及到了一个hostname配置，也就是说你要是主机名修改了，这个地方原来的配置hostname就会有实效的问题，
 这篇blog http://blog.csdn.net/kimmking/article/details/1613430也提到了类似的问题
