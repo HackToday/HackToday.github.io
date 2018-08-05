@@ -78,7 +78,5 @@ nsenter则是新创建的一个shell，这样就是新的会话。
   https://www.ustack.com/blog/running-coreos-on-uos/
 3. Attaching to a container with Docker 0.9 and libcontainer 
   http://jpetazzo.github.io/2014/03/23/lxc-attach-nsinit-nsenter-docker-0-9/
-4.Docker shell/provisioning without SSH
+4. Docker shell/provisioning without SSH
   https://github.com/mitchellh/vagrant/issues/4179
-
-                                   

@@ -22,6 +22,7 @@ hierarchy：对crgoups和subsystems以某种形式进行的组织，cgroup组织
 2. 如何使用Cgroups
   如果我们最原始的使用cgroup，不借助高级的docker方式，那么具体步骤如下：
 
+```
 To start a new job that is to be contained within a cgroup, using
 the "cpuset" cgroup subsystem, the steps are something like:
 
@@ -52,6 +53,7 @@ and then start a subshell 'sh' in that cgroup:
   # The subshell 'sh' is now running in cgroup Charlie
   # The next line should display '/Charlie'
   cat /proc/self/cgroup
+```
 
 3. 使用Docker，减少冗长细节的cgroup使用
   虽然Docker给我们带来了极大的方便，但是我们还是需要了解一些cgroup的操作使用，这样才更加有信心处理各种问题，
@@ -59,23 +61,34 @@ and then start a subshell 'sh' in that cgroup:
 3.1 使用cgroup-bin
  一般操作系统没有默认安装这个工具，我们自己需要安装，提供了很多有趣而且很棒的命令：
 
+```
  lssubsys 列出包含subsystem的hierarchy
  lscgroup 列出所有的cgroup
 
  /proc/cgroups 列出了系统中cgroup的subsystem
  /proc//cgroup  列出进程所属的cgroup，包含了cgroup的
+```
 
 3.2 Docker的结合
 比如我们docker run了一个container，
  
- 先找出contianer的ID， 
-   docker ps --no-trunc
+先找出contianer的ID，
 
- 根据上面找出的ID，找到对应的tasks ID，
+```
+   docker ps --no-trunc
+```
+
+根据上面找出的ID，找到对应的tasks ID，
+
+```
    cat  /sys/fs/cgroup/cpu/docker//tasks
-  
- 查看对应的cgroup
+```
+
+查看对应的cgroup
+
+```
    cat /proc//cgroup
+```
 
 4. 不同操作系统暴露的subsystem的区别
  ubuntu就和redhat有所不同，redhat有10中cgroup subsystem

@@ -42,7 +42,7 @@ chef-index：和apache solr的交互，对象的增删改，和rabbimq交互。
 
 
 ```
-      %% @doc Delete an object from Solr.
+     %% @doc Delete an object from Solr.
      %% @end
      %%
      %% Note that the guard for this function recapitulates the chef_indexable_type()
@@ -64,21 +64,14 @@ chef_wm： 包含了erchef的rest api实现和路由定义
 
 
 3. Chef-client执行流程：
+
  A “chef-client run” is the term used to describe a series of steps that are taken by the chef-client when it is configuring a node. The following diagram shows the various stages that occur during the chef-client run, and then the list below the diagram describes in greater detail each of those stages. 
 
 
+参考资料:
 
-1. chef-server.rb Optional Settings
- http://docs.opscode.com/config_rb_chef_server_optional_settings.html
-
-2. Monitor
- http://docs.opscode.com/server_monitor.html
-
-3. chef-client 
-http://docs.opscode.com/chef_client.html
-
-4. Erchef
-https://github.com/opscode/erchef
-
-5. chef-server
- http://docs.opscode.com/server_components.html
+1. chef-server.rb Optional Settings http://docs.opscode.com/config_rb_chef_server_optional_settings.html
+2. Monitor http://docs.opscode.com/server_monitor.html
+3. chef-client  http://docs.opscode.com/chef_client.html
+4. Erchef https://github.com/opscode/erchef
+5. chef-server http://docs.opscode.com/server_components.html
