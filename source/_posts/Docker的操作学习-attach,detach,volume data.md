@@ -26,11 +26,11 @@ CTRL-p CTRL-q
 sudo docker attach web
 ```
 
-4. 以background方式运行container
+4. 以background方式运行 container
 
-``` 
+```
 sudo docker run  -d -P  training/webapp python app.py
-``` 
+```
 
 其中 -P 是将container的ports暴露给对于主机所有的interface，比如上面的启动的container，
 我们可以通过sudo docker ps 查看运行的端口，
@@ -44,7 +44,7 @@ f3ca5cd8c307        training/webapp:latest     /bin/bash     24 minutes ago     
 5. Docker的数据管理及使用       
 
  docker的Data volumes功能可以:
- 
+
  - 对container进行方便的volume创建，
  - 对host的目录进行快捷的mount到container
  - 不同container之间通过volume进行数据共享
