@@ -16,7 +16,7 @@ tags: LINUX
    所以就索性按照Damian Zaremba写的关于 centos 6.5升级到7的步骤执行： http://damianzaremba.co.uk/
 
 ```
-    1. yum update 
+	1. yum update 
 
 	2. yum localinstall preupgrade-assistant-1.0.2-36.0.1.el6.centos.x86_64.rpm
 

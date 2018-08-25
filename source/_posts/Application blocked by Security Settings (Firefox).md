@@ -13,6 +13,8 @@ Your security settings have blocked an untrusted application from running
 
 参见这个帖子
 
->> https://support.mozilla.org/zh-CN/questions/983382
+```
+https://support.mozilla.org/zh-CN/questions/983382
+```
 
 使用Configure Java，security tab下，将对应的URL加入exception site list中即可。                                   

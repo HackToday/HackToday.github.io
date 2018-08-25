@@ -5,7 +5,9 @@ tags: 云计算
 
 如果参照安装文档，
 
->> https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/getting-started-guides/vagrant.md
+```
+https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/getting-started-guides/vagrant.md
+```
 
 实体物理机安装应该不会有问题，但是奈何资源有限，拿起来我的VirutalBox建了一个虚拟机，Ubuntu 14.04
 
