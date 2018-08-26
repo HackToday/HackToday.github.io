@@ -1,0 +1,81 @@
+title: 'HTTP-2 的简单介绍和理解'
+date: 2017-05-14 22:16:39
+tags: 服务器与存储
+---
+
+演进时间点
+HTTP 发明(1989 Tim Berers-Lee) --> HTTP 1.0 (1996)  --> HTTP 1.1 (1999) --> HTTP/2 (2015)
+
+HTTP 1.0  中的问题：
+每次请求都是一次独立的 TCP （3次握手）连接建立和关闭的过程；
+HOL （Head-of-line blocking）如果由于前面的请求不能及时处理，后续请求需要被阻塞直到前面的请求处理完毕才能继续发送。
+
+HTTP 1.1 相比 1.0  改进了包括：
+持久化连接，重用了 TCP 连接，减少不必要的资源的建立和释放过程。
+Pipeline 机制：多个请求可以同时发送，但是服务端仍然要按序一个个返回，所以仍然有一定程度的(HOL)， 各个浏览器对于这个特性不太感冒，很多禁掉或者没有实现这个Pipeline 机制
+
+
+除了上述主要修改，还涵盖Cache，扩展性（引入的比如路径追踪的头部和OPTIONS 方法），带宽利用（断点续传，部分资源请求，压缩），网络连接管理（持久化，Pilelining），消息传递（分块传输，编码方式指定），网络地址维护，错误通知的管理（新的状态码和警告头部），安全和完整性
+
+为了有效利用带宽和提高Web 服务性能，采用了一些技术
+
+拼接技术： 多个 js 文件整合一个，减少请求次数，但是也造成杀鸡牛刀的影响（小改动大数据的重新下载）
+ 
+嵌入内联 （将一些图片原始数据嵌入 css 中，也是减少请求次数，缓存无法有效利用，无法页面共享）
+
+Sprite 技术 （将很多小图拼接大图，然后使用js和css 等重新切割出来的小图，维护开发相对复杂）
+
+Sharding 技术（浏览器限制某一个域最多有 5（不同浏览器有些小的差别）连接，所以有些网站为了提高性能，使用新的主机名，提高同时连接的数目，实现资源请求的效率的提升）
+
+
+HTTP/2 登场
+HTTP 1.1 虽然较 1.0 改进了了很多，但是在如今随着网页的越来越复杂丰富，移动网络的兴起（相比传统的有线稳定的网络），如今的带宽往往处理这些越来越力不从心，所以演进了 HTTP/2 (基于 Google SPDY)
+
+HTTP/2 有如下特点：
+
+二进制的协议（相比原来的文本方式，解析处理更加容易）
+
+采用多路复用（共享连接上双方可以同时发送请求和响应，这样原来 HTTP/1.1 的中一些技术比如sharding，嵌入内联，Spriting 就没有必要了）
+
+
+每个流可以设置优先级和依赖关系  （服务器或者客户端对于并行发送的这些独立的帧的设置，可以控制资源的获取先后顺序）
+
+服务器推送 （服务器主动将资源推送给客户端，减少客户端额外请求的延迟）
+
+头部压缩 （HPACK 压缩格式，主要是静态Huffman 对头部字段编码 ，并且客户端和服务端同时维护，更新这些头部字段的索引列表）
+
+
+流量控制 （服务器和客户端可以实现自己的数据流流量控制，更加接近应用级别的流控）
+
+
+HTTP/2 的支持
+
+现在基本所有大型浏览器对提供了对于 HTTP/2 的支持，包括Firefox， Chrome 等。 （HTTP/2本身并不强制使用TLS，但是一些浏览器要求使用HTTP/2 必须使用 TLS） ,一些主要的Web 服务器也提供了支持，比如Nginx，Apache 等。
+
+部署 HTTP/2 需要客户端和服务器同时支持，如果对于普通的Web 程序，浏览器支持就够了。
+
+HTTP/2 性能比较一个例子
+
+通过https://imagekit.io/demo/http2-vs-http1 这个例子，我们开启 Chrome 中的protocol 显示，发现 HTTP/2 的请求几乎是同时，然后完成加载
+
+而 HTTP/1.1 同一时间是大约是5~6 个并发请求，所以对于这种100 个小图拼接的图像，HTTP/2 完败 HTTP/1.1
+
+
+以上只是简单的总结，更加深入的介绍还需要对于 HTTP/2 规范等细致的通读一下。
+
+
+https://www.w3.org/Protocols/HTTP/1.0/spec.html
+https://www.w3.org/Protocols/History.html
+http://www8.org/w8-papers/5c-protocols/key/key.html
+https://bagder.gitbooks.io/http2-explained/content/zh/part3.html
+https://developers.google.com/web/fundamentals/performance/http2/
+https://linjunzhu.github.io/blog/2016/03/10/http2-zongjie/
+http://www.jianshu.com/p/52d86558ca57
+https://imququ.com/post/header-compression-in-http2.html
+http://if-true.com/2015/04/27/tech-difference-between-http-1.1-2.0.html
+https://blog.imagekit.io/still-not-using-http-2-327d56397b58
+https://tools.ietf.org/html/rfc7540
+https://en.wikipedia.org/wiki/Head-of-line_blocking
+https://en.wikipedia.org/wiki/HTTP_pipelining
+http://www.cnblogs.com/xiaohuochai/p/6159326.html
+https://imagekit.io/demo/http2-vs-http1
