@@ -11,6 +11,7 @@ tags: LINUX
 
 调查：这种问题，一般用 tcpdump 跟踪一下就容易解决。
 
+<!-- more -->
 ```
 08:19:59.630162 IP myhost.24435 > VIP.http: Flags [P.], seq 1:77, ack 1, win 58, length 76
 08:19:59.721043 IP VIP.http > myhost.24435: Flags [.], ack 77, win 58, length 0

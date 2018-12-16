@@ -14,6 +14,7 @@ http://www.github.com/opencontainers/image-spec
 主要的流程是，从镜像源下载 OCI 镜像，解压符合 OCI 运行时的文件系统 Bundle，然后由 OCI Runtime 运行（例如runc）
 不难看出，上面 OCI的使命主要是解决底层容器运行相关容器打包标准化和运行环境规范，实现容器镜像的跨云，平台的即插即用。
 
+<!-- more -->
 第一章. 群雄逐鹿
 
  - Containerd

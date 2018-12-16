@@ -3,13 +3,14 @@ date: 2017-11-29 23:26:38
 tags: 架构设计与优化
 ---
 
-今天访问镜像页面的时候发现时不时的出现 502 这个奇怪的错误，感觉是个值得研究的性能相关的问题，尤其是大量镜像访问的时候出现的频率加大，
-于是撸起袖子准备搞起。
+今天访问镜像页面的时候发现时不时的出现 502 这个奇怪的错误，感觉是个值得研究的性能相关的问题，
+尤其是大量镜像访问的时候出现的频率加大，于是撸起袖子准备搞起。
 
 环境： Nginx + gunicorn + Web App
 
 解决思路：
 
+<!-- more -->
 1. 既然是 Nginx 问题，先看 nginx error 日志，发现
 
 Upstream prematurely closed connection while reading response header from upstream

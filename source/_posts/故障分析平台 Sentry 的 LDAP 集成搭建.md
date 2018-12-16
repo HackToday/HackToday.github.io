@@ -7,6 +7,7 @@ sentry 是一个支持软件系统故障信息报告和聚集的平台，可以�
 
 sentry 本身提供了扩展点，方便第三方来实现相关的系统集成，以 LDAP 为例，sentry-ldap-auth 是一个 django 定制化实现，支持 LDAP， 具体的配置在 github 介绍中比较简陋，所以用户在配置中容易出现各类奇怪的问题，所以，今天我们以一个系统为例，说说 LDAP 相关的配置。
 
+<!-- more -->
 1. 首先是 sentry 本身的安装，这个比较简单，
 
 下载 https://github.com/getsentry/onpremise，然后进行 docker 镜像的构建，在构建之前，需要根据实际情况对 sentry.conf.py 进行配置，这里就涉及到 LDAP 插件的定制，
