@@ -24,19 +24,15 @@ tags: Linux
 
 - 配置 localsearch 支持搜索，具体如下：
 
-		```
-		  $ npm install hexo-generator-searchdb --save
-		```  
+		$ npm install hexo-generator-searchdb --save
  
   编辑站点配置文件，加入内容：
 
-		```
 		search:
-		  path: search.xml
-		  field: post
-		  format: html
-		  limit: 1000
-		```
+			path: search.xml
+			field: post
+			format: html
+			limit: 1000
  
   编辑主题配置文件，将 local_search 的 `enable` 设置为 `true` 
 
