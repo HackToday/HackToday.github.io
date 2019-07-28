@@ -1,0 +1,2278 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-cn,en,default">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="This is a place for thinking and writing">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HackToday Walk Blog">
+<meta property="og:url" content="http://yoursite.com/page/6/index.html">
+<meta property="og:site_name" content="HackToday Walk Blog">
+<meta property="og:description" content="This is a place for thinking and writing">
+<meta property="og:locale" content="zh-cn">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HackToday Walk Blog">
+<meta name="twitter:description" content="This is a place for thinking and writing">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/6/">
+
+
+
+
+
+  <title>HackToday Walk Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-cn">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">HackToday Walk Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/09/12/DC-OS 安装体验/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/09/12/DC-OS 安装体验/" itemprop="url">DC-OS 安装体验</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-09-12T21:42:55+08:00">
+                2016-09-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>本文主要尝试如何快速的创建一个 DC/OS 的开发测试集群</p>
+<ol>
+<li>安装virtualbox<br>下载链接 <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank" rel="noopener">https://www.virtualbox.org/wiki/Downloads</a><br>根据不同的平台来安装不同的格式包，比如rpm<br>下载pack：</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">Oracle_VM_VirtualBox_Extension_Pack-5</span><span class="selector-class">.0</span><span class="selector-class">.26-108824</span><span class="selector-class">.vbox-extpack</span> 进行安装，点击安装</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>安装vagrant<br>也是根据不同的平台来安装<br>下载链接 <a href="https://www.vagrantup.com/downloads.html" target="_blank" rel="noopener">https://www.vagrantup.com/downloads.html</a></li>
+</ol>
+<p><strong>注意</strong> 1,2步骤有坑的地方是，不同的版本组合会有问题，比如我安装的时候使用的1.8.4 最新的virtualbox 5.1.4<br>vagrant是不能识别virtualbox provider的，具体错误是：<br>No Usable default provider could be found for your system</p>
+<p>这个是因为有滞后支持的现象的，所以在安装的时候，根据安装需求的时候需要&gt;=的版本跨度不要太大</p>
+<ol start="3">
+<li>clone dcos-agent repo</li>
+</ol>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">https</span>://github.com/dcos/dcos-vagrant</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>安装 Vagrant Host Manager插件</li>
+</ol>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vagrant plugin <span class="keyword">install</span> vagrant-hostmanager</span><br></pre></td></tr></table></figure>
+<ol start="5">
+<li>下载DC/OS installer</li>
+</ol>
+<figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://downloads.dcos.io/dcos/EarlyAccess/dcos_generate_config.sh?_ga=<span class="number">1.153462449</span>.<span class="number">848392970</span>.<span class="number">1471186149</span></span><br></pre></td></tr></table></figure>
+<p>这里是1.8.2版本</p>
+<ol start="6">
+<li>配置DC/OS installer</li>
+</ol>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="builtin-name">export</span> <span class="attribute">DCOS_GENERATE_CONFIG_PATH</span>=dcos_generate_config.sh</span><br><span class="line"><span class="builtin-name">export</span> <span class="attribute">DCOS_CONFIG_PATH</span>=etc/config-1.8.yaml</span><br></pre></td></tr></table></figure>
+<ol start="7">
+<li>配置DC/OS的机器类型</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">cp</span> <span class="selector-tag">VagrantConfig</span><span class="selector-class">.yaml</span><span class="selector-class">.example</span> <span class="selector-tag">VagrantConfig</span><span class="selector-class">.yaml</span></span><br></pre></td></tr></table></figure>
+<ol start="8">
+<li>下载VM的基础镜像</li>
+</ol>
+<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vagrant <span class="built_in">box</span> <span class="built_in">add</span> https:<span class="comment">//downloads.dcos.io/dcos-vagrant/metadata.json</span></span><br></pre></td></tr></table></figure>
+<p>但是这里我发现另外的机器下载很慢，于是进入链接，先下载镜像 <a href="https://downloads.dcos.io/dcos-vagrant/dcos-centos-virtualbox-0.7.0.box" target="_blank" rel="noopener">https://downloads.dcos.io/dcos-vagrant/dcos-centos-virtualbox-0.7.0.box</a><br>下载到路径 /root/dcos-centos-virtualbox-0.7.0.box</p>
+<p>下面的格式修改如下：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"name"</span>: <span class="string">"mesosphere/dcos-centos-virtualbox"</span>,</span><br><span class="line">  <span class="attr">"description"</span>: <span class="string">"Base image on which to install Mesosphere DC/OS on VirtualBox"</span>,</span><br><span class="line">  <span class="attr">"versions"</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">"version"</span>: <span class="string">"0.7.0"</span>,</span><br><span class="line">      <span class="attr">"status"</span>: <span class="string">"active"</span>,</span><br><span class="line">      <span class="attr">"description_markdown"</span>: <span class="string">"Enable IPv4 forwarding"</span>,</span><br><span class="line">      <span class="attr">"providers"</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">"name"</span>: <span class="string">"virtualbox"</span>,</span><br><span class="line">          <span class="attr">"url"</span>: <span class="string">"/root/dcos-centos-virtualbox-0.7.0.box"</span>,</span><br><span class="line">          <span class="attr">"checksum_type"</span>: <span class="string">"sha1"</span>,</span><br><span class="line">          <span class="attr">"checksum"</span>: <span class="string">"fc9d5a6a99ecb70aee67d4b68b8b6a48563e57cb"</span></span><br><span class="line">        &#125;</span><br><span class="line">      ]</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>执行：</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">vagrant</span> <span class="keyword">box </span><span class="keyword">add </span>metadata.json</span><br></pre></td></tr></table></figure>
+<ol start="9">
+<li><p>可选的配置： Configure 认证，（默认安装是使用OAuth，支持Google，Github, or Microsoft）<br>这个会在第一次登陆的时候提示认证，当然你也可以配置不同认证，参考 <a href="https://dcos.io/docs/1.7/administration/id-and-access-mgt/managing-authentication/#authentication-opt-out" target="_blank" rel="noopener">https://dcos.io/docs/1.7/administration/id-and-access-mgt/managing-authentication/#authentication-opt-out</a></p>
+</li>
+<li><p>部署集群</p>
+</li>
+</ol>
+<p>比如 vagrant up m1 a1 p1 boot</p>
+<p>上面的对应的是：<br>m1  master节点<br>a1  agent private节点<br>p1  agent public 节点<br>boot boot节点</p>
+<p>更多参考： <a href="https://github.com/dcos/dcos-vagrant/blob/master/VagrantConfig.yaml.example" target="_blank" rel="noopener">https://github.com/dcos/dcos-vagrant/blob/master/VagrantConfig.yaml.example</a></p>
+<ol start="11">
+<li>扩展集群<br>增加 agent node   </li>
+</ol>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">vagrant</span> up <span class="built_in">a2</span></span><br><span class="line"><span class="symbol">vagrant</span> up <span class="built_in">p2</span></span><br></pre></td></tr></table></figure>
+<p>减少节点</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">vagrant</span> destroy -f <span class="built_in">a1</span></span><br><span class="line"><span class="symbol">vagrant</span> destroy -f <span class="built_in">p1</span></span><br></pre></td></tr></table></figure>
+<p>删除整个集群</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">vagrant destroy -f</span></span><br></pre></td></tr></table></figure>
+<ol start="12">
+<li>简单的测试集群工作，</li>
+</ol>
+<p>创建一个nginx 的 job</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/14/Selenium python UI Test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/08/14/Selenium python UI Test/" itemprop="url">Selenium python UI Test</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-08-14T10:18:41+08:00">
+                2016-08-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>python中如何容易的使用selenium来进行APP的测试，可以从如下考虑：</p>
+<ol>
+<li>Python中有个方便的库进行快速的集成和测试，py.test，pytest支持一系列的插件，其中就包含了 对于selenium的支持，使用方式如下：</li>
+</ol>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_example</span><span class="params">(selenium)</span></span><span class="symbol">:</span></span><br><span class="line">    selenium.get(<span class="string">'http://www.example.com'</span>)</span><br><span class="line"></span><br><span class="line">py.test --driver Firefox</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>Selenium广泛使用的远程测试是使用Remote Driver，具体如下：</li>
+</ol>
+<figure class="highlight brainfuck"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">    py</span><span class="string">.</span><span class="comment">test</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">driver</span> <span class="comment">Remote</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">host</span> <span class="comment">selenium</span><span class="string">.</span><span class="comment">hostname</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">port</span> <span class="comment">5555</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">capability</span> <span class="comment">browserName</span> <span class="comment">firefox</span></span><br></pre></td></tr></table></figure>
+<p>一般测试使用例子如下（远程测试）：</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py.test <span class="params">--base-url</span> http:<span class="string">//10.221.83.203</span><span class="function">:8081</span> <span class="params">--driver</span> Remote <span class="params">--host</span> 10.15.240.120 <span class="params">--capability</span> browserName firefox</span><br></pre></td></tr></table></figure>
+<p>3.如果采用了marker方式，可以指定运行某类测试：</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py.test <span class="params">--base-url</span> http:<span class="string">//10.221.83.203</span><span class="function">:8081</span> <span class="params">--driver</span> Remote <span class="params">--host</span> 10.15.240.120 <span class="params">--capability</span> browserName firefox  -m negative</span><br></pre></td></tr></table></figure>
+<p>这里就只会运行 pytest.mark.negative 类型的测试</p>
+<p>python中如何容易的使用selenium来进行APP的测试，可以从如下考虑：</p>
+<ol>
+<li>Python中有个方便的库进行快速的集成和测试，py.test，pytest支持一系列的插件，其中就包含了 对于selenium的支持，使用方式如下：</li>
+</ol>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_example</span><span class="params">(selenium)</span></span><span class="symbol">:</span></span><br><span class="line">    selenium.get(<span class="string">'http://www.example.com'</span>)</span><br><span class="line"></span><br><span class="line">py.test --driver Firefox</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>Selenium广泛使用的远程测试是使用Remote Driver，具体如下：</li>
+</ol>
+<figure class="highlight brainfuck"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">    py</span><span class="string">.</span><span class="comment">test</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">driver</span> <span class="comment">Remote</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">host</span> <span class="comment">selenium</span><span class="string">.</span><span class="comment">hostname</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">port</span> <span class="comment">5555</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">capability</span> <span class="comment">browserName</span> <span class="comment">firefox</span></span><br></pre></td></tr></table></figure>
+<p>一般测试使用例子如下（远程测试）：</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py.test <span class="params">--base-url</span> http:<span class="string">//10.221.83.203</span><span class="function">:8081</span> <span class="params">--driver</span> Remote <span class="params">--host</span> 10.15.240.120 <span class="params">--capability</span> browserName firefox</span><br></pre></td></tr></table></figure>
+<p>3.如果采用了marker方式，可以指定运行某类测试：</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py.test <span class="params">--base-url</span> http:<span class="string">//10.221.83.203</span><span class="function">:8081</span> <span class="params">--driver</span> Remote <span class="params">--host</span> 10.15.240.120 <span class="params">--capability</span> browserName firefox  -m negative</span><br></pre></td></tr></table></figure>
+<p>这里就只会运行 pytest.mark.negative 类型的测试</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/14/Selenium Headless Automated Testing/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/08/14/Selenium Headless Automated Testing/" itemprop="url">Selenium Headless Automated Testing</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-08-14T10:13:30+08:00">
+                2016-08-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>关于ubuntu的介绍如下：</p>
+<p><a href="http://www.installationpage.com/selenium/how-to-run-selenium-headless-firefox-in-ubuntu/" target="_blank" rel="noopener">http://www.installationpage.com/selenium/how-to-run-selenium-headless-firefox-in-ubuntu/</a></p>
+<ol>
+<li>如果使用的是yum源系统，安装如下的包：</li>
+</ol>
+<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install xorg-<span class="keyword">x</span><span class="number">11</span>-server-Xvfb.<span class="keyword">x</span><span class="number">86</span>_<span class="number">64</span></span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>然后执行如下，启动xvfb服务：</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">Xvfb</span> <span class="selector-pseudo">:10</span> <span class="selector-tag">-ac</span></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>在系统中以headless方式启动centos</li>
+</ol>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="builtin-name">export</span> <span class="attribute">DISPLAY</span>=:10</span><br><span class="line">firefox</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>执行selenium测试：<br>python code 如下：</li>
+</ol>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium import webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.common.exceptions import TimeoutException</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support.ui import WebDriverWait # available since 2.4.0</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support import expected_conditions as EC # available since 2.26.0</span><br><span class="line"></span><br><span class="line"><span class="comment"># Create a new instance of the Firefox driver</span></span><br><span class="line">driver = webdriver.Firefox()</span><br><span class="line"></span><br><span class="line"><span class="comment"># go to the baidu home page</span></span><br><span class="line">driver.<span class="builtin-name">get</span>(<span class="string">"http://www.baidu.com"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># the page is ajaxy so the title is originally this:</span></span><br><span class="line"><span class="builtin-name">print</span> driver.title</span><br><span class="line"></span><br><span class="line"><span class="comment"># find the element that's name attribute is q (the baidu search box)</span></span><br><span class="line">inputElement = driver.find_element_by_name(<span class="string">"wd"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># type in the search</span></span><br><span class="line">inputElement.send_keys(<span class="string">"cheese!"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># submit the form (although baidu automatically searches now without submitting)</span></span><br><span class="line">inputElement.submit()</span><br><span class="line"></span><br><span class="line">try:</span><br><span class="line">    # we have <span class="keyword">to</span> wait <span class="keyword">for</span> the<span class="built_in"> page </span><span class="keyword">to</span> refresh, the last thing that seems <span class="keyword">to</span> be updated is the title</span><br><span class="line">    WebDriverWait(driver, 10).until(EC.title_contains(<span class="string">"cheese!"</span>))</span><br><span class="line"></span><br><span class="line">    # You should see <span class="string">"cheese! - baidu Search"</span></span><br><span class="line">    <span class="builtin-name">print</span> driver.title</span><br><span class="line"></span><br><span class="line">finally:</span><br><span class="line">        driver.quit()</span><br></pre></td></tr></table></figure>
+<p>运行如下：<br>百度一下，你就知道<br>cheese!_百度搜索</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/14/UTC的Datetime和ISO处理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/08/14/UTC的Datetime和ISO处理/" itemprop="url">UTC的Datetime和ISO处理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-08-14T10:09:46+08:00">
+                2016-08-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>问题1， Django中集成了相应的函数来处理这种转化如下</p>
+<p>参考 <a href="http://www.dannysite.com/blog/122/" target="_blank" rel="noopener">http://www.dannysite.com/blog/122/</a></p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; from django<span class="selector-class">.utils</span><span class="selector-class">.timezone</span> import utc</span><br><span class="line">&gt;&gt;&gt; from django<span class="selector-class">.utils</span><span class="selector-class">.timezone</span> import localtime</span><br><span class="line">&gt;&gt;&gt; now = datetime<span class="selector-class">.datetime</span><span class="selector-class">.utcnow</span>().replace(tzinfo=utc)</span><br><span class="line">&gt;&gt;&gt; localtime(now)</span><br><span class="line">datetime.datetime(<span class="number">2013</span>, <span class="number">12</span>, <span class="number">5</span>, <span class="number">0</span>, <span class="number">3</span>, <span class="number">13</span>, <span class="number">122000</span>, tzinfo= CST+<span class="number">8</span>:<span class="number">00</span>:<span class="number">00</span> STD&gt;)</span><br></pre></td></tr></table></figure>
+<p>问题2， 还有一种情况，对应的是ISO8601 字符串，要转化成对应的datetime对象<br>一种是用iso8601包，但是这种情况下需要单独通过pip安装iso8601，<br>参考：<a href="https://julien.danjou.info/blog/2015/python-and-timezones" target="_blank" rel="noopener">https://julien.danjou.info/blog/2015/python-and-timezones</a> </p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt; import iso8601</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt; iso8601.parse_date(utcnow().isoformat())</span><br></pre></td></tr></table></figure>
+<p>还有一种方式是用传统的python的dateutil包：<br>参考：<a href="http://stackoverflow.com/questions/969285/how-do-i-translate-a-iso-8601-datetime-string-into-a-python-datetime-object" target="_blank" rel="noopener">http://stackoverflow.com/questions/969285/how-do-i-translate-a-iso-8601-datetime-string-into-a-python-datetime-object</a> </p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import dateutil.parser</span><br><span class="line">yourdate = dateutil<span class="selector-class">.parser</span><span class="selector-class">.parse</span>(datestring)</span><br></pre></td></tr></table></figure>
+<p>如果本身不是字符串，而是对应的datetime对象，可以直接使用 <a href="https://docs.djangoproject.com/en/1.9/topics/i18n/timezones/" target="_blank" rel="noopener">https://docs.djangoproject.com/en/1.9/topics/i18n/timezones/</a><br>localtime来处理</p>
+<p>问题3， 如果需要特殊的处理，可以写custom的 template filter，具体如下：<br><a href="https://docs.djangoproject.com/en/1.8/howto/custom-template-tags/" target="_blank" rel="noopener">https://docs.djangoproject.com/en/1.8/howto/custom-template-tags/</a> </p>
+<p>这种方式可以处理普通的template中无法处理的情况</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/07/06/USB数据恢复的几种方法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/07/06/USB数据恢复的几种方法/" itemprop="url">USB数据恢复的几种方法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-07-06T22:58:10+08:00">
+                2016-07-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>这几天帮别人解决数据恢复的事情，USB盘文件无法识别，全都是乱码，无法识别目录，发现有一篇文章写得很好【1】<br>当然还是靠那篇文章中强大的一款软件搞定，觉得特别有帮助。</p>
+<p>参考资料：</p>
+<ol>
+<li><a href="http://blog.sciencenet.cn/blog-781100-974887.html" target="_blank" rel="noopener">http://blog.sciencenet.cn/blog-781100-974887.html</a>                                   </li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/07/06/youtube技术视频的下载方法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/07/06/youtube技术视频的下载方法/" itemprop="url">youtube技术视频的下载方法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-07-06T22:50:55+08:00">
+                2016-07-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>因为youtube有些技术视频非常好，有时候很需要下载到自己的手机上随时看，那么某乎上有些介绍如【1】<br>网上也有些推荐如： </p>
+<p>1) <a href="http://www.clipconverter.cc/" target="_blank" rel="noopener">http://www.clipconverter.cc/</a><br>2) <a href="http://en.savefrom.net/" target="_blank" rel="noopener">http://en.savefrom.net/</a></p>
+<p>参考资料：</p>
+<ol>
+<li><a href="https://www.zhihu.com/question/22247271" target="_blank" rel="noopener">https://www.zhihu.com/question/22247271</a>                                   </li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/07/02/exFAT格式的移动硬盘在Windows 7下无法写/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/07/02/exFAT格式的移动硬盘在Windows 7下无法写/" itemprop="url">exFAT格式的移动硬盘在Windows 7下无法写</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-07-02T15:08:06+08:00">
+                2016-07-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>前段时间使用的Mac格式化的exFAT格式的移动硬盘，发现无法创建文件和删除文件，原来需要检查修复一下就可以了，</p>
+<p>具体如下：<br>管理员权限运行cmd，执行下面的命令即可：</p>
+<p>chkdsk 盘符 /F</p>
+<p>参考:</p>
+<p><a href="http://blog.chenxu.me/post/detail?id=1fa055ec-b46a-4437-a92f-a5d1596ad654" target="_blank" rel="noopener">http://blog.chenxu.me/post/detail?id=1fa055ec-b46a-4437-a92f-a5d1596ad654</a>                                   </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/06/20/编译内核及其Kernel Perf工具记录/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/06/20/编译内核及其Kernel Perf工具记录/" itemprop="url">编译内核及其Kernel Perf工具记录</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-06-20T22:17:28+08:00">
+                2016-06-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近在尝试编译安装最新的4.6.1内核，遇到一些问题，记录如下:</p>
+<ol>
+<li><p>编译内核的错误： Alert: /dev/disk/by-uuid/**  does not exist</p>
+<p>这个主要原因是相应的driver没有编译进内核导致。主要是相应的顺序错误, make install 是最后一步，不能在模块编译安装前运行。</p>
+</li>
+</ol>
+<figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">make</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">make</span> modules</span><br><span class="line"></span><br><span class="line"><span class="built_in">make</span> modules_install</span><br><span class="line"></span><br><span class="line"><span class="built_in">make</span> install</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>对应的perf tool对应的ubuntu安装包没有相应的内核的版本，需要自己编译<br>步骤；</li>
+</ol>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> /usr/src/linux-<span class="number">4.6</span>.<span class="number">1</span></span><br><span class="line"><span class="keyword">cd</span> tools/perf</span><br><span class="line"></span><br><span class="line"><span class="keyword">make</span></span><br><span class="line"><span class="keyword">make</span> install</span><br></pre></td></tr></table></figure>
+<p>参考资料:</p>
+<p><a href="http://askubuntu.com/questions/50145/how-to-install-perf-monitoring-tool" target="_blank" rel="noopener">http://askubuntu.com/questions/50145/how-to-install-perf-monitoring-tool</a><br><a href="http://stackoverflow.com/questions/34473447/custom-linux-kernel-build-failure-in-vmware-workstation" target="_blank" rel="noopener">http://stackoverflow.com/questions/34473447/custom-linux-kernel-build-failure-in-vmware-workstation</a><br><a href="https://lkml.org/lkml/2016/5/3/3" target="_blank" rel="noopener">https://lkml.org/lkml/2016/5/3/3</a>                                   </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/06/20/Linux, Windows, Mac之间的文件共享和迁移/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/06/20/Linux, Windows, Mac之间的文件共享和迁移/" itemprop="url">Linux, Windows, Mac之间的文件共享和迁移</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-06-20T22:15:20+08:00">
+                2016-06-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近在打算把原来Mac上面的一些资料迁移到我的Windows机器上，碰到了几个问题纪录一下：</p>
+<ol>
+<li>exfat， ntfs的问题</li>
+</ol>
+<p>最初我打算是用我的移动硬盘作为载体，把Mac上的资料Copy到Windows上，问题来了，原来的移动硬盘格式是NTFS的，Mac下面，<br>这种格式默认是只支持读，不可写，当然可以借助第三方工具做这个，但是会有相应的格式损坏的风险，所以打算从原生角度开展，<br>exfat是一种windows visa开始支持的，但是我的Windows机器是XP，exfat的支持微软官方提供了相应的驱动。</p>
+<ol start="2">
+<li>windows Mac 文件之间传输的网络方式</li>
+</ol>
+<p>从windows XP 访问Mac， 根据我的实验，即使在Mac上设置了共享和读写权限，以及保证和XP是同一个workgroup，还是无法访问，<br>防火墙里也有对应的File sharing 允许规则，参看这个帖子：<br><a href="https://social.technet.microsoft.com/Forums/en-US/daea5819-f6fa-4273-9203-51051c12f4d5/-winxp-osx-?forum=windowsxpzhchs" target="_blank" rel="noopener">https://social.technet.microsoft.com/Forums/en-US/daea5819-f6fa-4273-9203-51051c12f4d5/-winxp-osx-?forum=windowsxpzhchs</a></p>
+<p>网上微软论坛也没给出解决，估计问题比较难定位<br>类似的参考link，具体没有时间细细研究：</p>
+<p><a href="http://forums.macrumors.com/threads/windows-8-1-cant-access-share-on-mac-with-valid-credentials.1807636/" target="_blank" rel="noopener">http://forums.macrumors.com/threads/windows-8-1-cant-access-share-on-mac-with-valid-credentials.1807636/</a><br><a href="http://forums.macrumors.com/threads/windows-7-can-see-but-not-access-os-x-share.1638263/" target="_blank" rel="noopener">http://forums.macrumors.com/threads/windows-7-can-see-but-not-access-os-x-share.1638263/</a></p>
+<p>从Mac访问windows XP比较简单，按照windows的共享目录的设置，然后打开Finder，Command+K打开，输入smb://,就可以访问了</p>
+<ol start="3">
+<li>Ubuntu Linux exfat挂载<br>Ubuntu默认的是没有安装对应的exfat驱动，需要运行下面的命令安装驱动</li>
+</ol>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="builtin-name">get</span> install exfat-fuse exfat-utils</span><br></pre></td></tr></table></figure>
+<p>这里为什么提到Ubuntu的exfat，因为最后我采用的方式，是安装了一个Ubuntu<br>16.04的虚拟机，然后安装了对应的exfat驱动支持，通过usb挂载方式，这样虚拟机就可以访问了移动硬盘了。<br>接下来就需要通过虚拟机的共享目录方式(virtualbox 需要安装对应的增强功能，才能挂载对应的vboxsf文件类型)，<br>实现虚拟机和windows XP主机的文件访问，从而可以将移动硬盘的资料拷贝到windows XP的目录中。</p>
+<ol start="4">
+<li>其他的云方案，暂时没有考虑，因为自己的需求比较简单，杀鸡不用牛刀。</li>
+</ol>
+<p>参考资料：</p>
+<ol>
+<li><a href="http://techmeasy.blogspot.com/2012/07/add-support-for-exFAT-in-Windows-XP.html" target="_blank" rel="noopener">http://techmeasy.blogspot.com/2012/07/add-support-for-exFAT-in-Windows-XP.html</a></li>
+<li><a href="http://www.liqi.name/windows-xp-7-mac-os-x-network-share/" target="_blank" rel="noopener">http://www.liqi.name/windows-xp-7-mac-os-x-network-share/</a></li>
+<li><a href="http://askubuntu.com/questions/451364/how-to-enable-exfat-in-ubuntu-14-04" target="_blank" rel="noopener">http://askubuntu.com/questions/451364/how-to-enable-exfat-in-ubuntu-14-04</a>                                   </li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/29/kindle购买美国亚马逊的书籍/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/05/29/kindle购买美国亚马逊的书籍/" itemprop="url">kindle购买美国亚马逊的书籍</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-05-29T10:53:58+08:00">
+                2016-05-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>参考知乎上的链接 <a href="https://www.zhihu.com/question/23863224" target="_blank" rel="noopener">https://www.zhihu.com/question/23863224</a></p>
+<p>主要步骤：</p>
+<ol>
+<li><p>注册美亚账号</p>
+</li>
+<li><p>填写地址信息，如果使用中国地址，你是无法购买美亚的kindle书籍的</p>
+</li>
+<li><p>使用信用卡或者礼品卡（某tao网站）</p>
+</li>
+<li><p>下单，直接选择deliver方式，会发现kindle设备的书籍下载进度很慢，半天不动，可能和墙有些关系，<br>所以直接使用通过电脑下载本地，然后USB连接kindle，copy到Documents目录中即可。                                   </p>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Kai Qiang Wu</p>
+              <p class="site-description motion-element" itemprop="description">This is a place for thinking and writing</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">252</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/HackToday" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Kai Qiang Wu</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+        
+<div class="busuanzi-count">
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> Visitor
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> Total Visit
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

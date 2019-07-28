@@ -1,0 +1,2338 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-cn,en,default">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="This is a place for thinking and writing">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HackToday Walk Blog">
+<meta property="og:url" content="http://yoursite.com/page/11/index.html">
+<meta property="og:site_name" content="HackToday Walk Blog">
+<meta property="og:description" content="This is a place for thinking and writing">
+<meta property="og:locale" content="zh-cn">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HackToday Walk Blog">
+<meta name="twitter:description" content="This is a place for thinking and writing">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/11/">
+
+
+
+
+
+  <title>HackToday Walk Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-cn">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">HackToday Walk Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/10/13/Docker技术-cgroup/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2014/10/13/Docker技术-cgroup/" itemprop="url">Docker技术-cgroup</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-10-13T08:50:42+08:00">
+                2014-10-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Docker容器采用了linux内核中的cgroup技术来实现container的资源的隔离和控制。<br>关于cgroup我们需要了解的它的知识点：</p>
+<ol>
+<li>基本概念</li>
+</ol>
+<p>cgroup涉及到几个概念如下：<br>cgroup：以某种方式，将某些任务和subsystem进行关联<br>subsystem：基于cgroup的资源管理器，可以看作一种资源（比如CPU，Memory， I/O等），实现对一个cgroup的task的调度和控制<br>hierarchy：对crgoups和subsystems以某种形式进行的组织，cgroup组织形式是树结构，subsystem会关联连接到hierarchy上。</p>
+<p>上面的概念有点抽象，看个简单的例子就明白了，比如redhat官网的一个图：</p>
+<p>上面的就是一个1个hierarchy，有两个subsystem（cpu和memory） attach上，其中的cgroups以tree的结构组织。</p>
+<p>既然cgroup是什么以及结构弄清楚了，那到底cgroup如何实现的资源的管理控制，cgroup是和task（乜可以看作是系统中的进程）关联的，这样不同的cgroup在subsystem中的资源控制下就能够分配到不同的份额或者设定不同的限制，同时可以统计监控资源的消耗情况。</p>
+<ol start="2">
+<li>如何使用Cgroups<br>如果我们最原始的使用cgroup，不借助高级的docker方式，那么具体步骤如下：</li>
+</ol>
+<figure class="highlight vhdl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">To</span> start a <span class="keyword">new</span> job that <span class="keyword">is</span> <span class="keyword">to</span> be contained within a cgroup, using</span><br><span class="line">the <span class="string">"cpuset"</span> cgroup subsystem, the steps are something like:</span><br><span class="line"></span><br><span class="line"> <span class="number">1</span>) mount -t tmpfs cgroup_root /sys/fs/cgroup</span><br><span class="line"> <span class="number">2</span>) mkdir /sys/fs/cgroup/cpuset</span><br><span class="line"> <span class="number">3</span>) mount -t cgroup -ocpuset cpuset /sys/fs/cgroup/cpuset</span><br><span class="line"> <span class="number">4</span>) Create the <span class="keyword">new</span> cgroup by doing mkdir<span class="symbol">'s</span> <span class="keyword">and</span> write<span class="symbol">'s</span> (<span class="keyword">or</span> echo<span class="symbol">'s</span>) <span class="keyword">in</span></span><br><span class="line">    the /sys/fs/cgroup virtual <span class="keyword">file</span> system.</span><br><span class="line"> <span class="number">5</span>) Start a task that will be the <span class="string">"founding father"</span> <span class="keyword">of</span> the <span class="keyword">new</span> job.</span><br><span class="line"> <span class="number">6</span>) Attach that task <span class="keyword">to</span> the <span class="keyword">new</span> cgroup by writing its PID <span class="keyword">to</span> the</span><br><span class="line">    /sys/fs/cgroup/cpuset/tasks <span class="keyword">file</span> <span class="keyword">for</span> that cgroup.</span><br><span class="line"> <span class="number">7</span>) fork, exec <span class="keyword">or</span> clone the job tasks from this founding father task.</span><br><span class="line"></span><br><span class="line"><span class="keyword">For</span> example, the following <span class="keyword">sequence</span> <span class="keyword">of</span> commands will setup a cgroup</span><br><span class="line">named <span class="string">"Charlie"</span>, containing just CPUs <span class="number">2</span> <span class="keyword">and</span> <span class="number">3</span>, <span class="keyword">and</span> Memory Node <span class="number">1</span>,</span><br><span class="line"><span class="keyword">and</span> <span class="keyword">then</span> start a subshell <span class="symbol">'sh</span>' <span class="keyword">in</span> that cgroup:</span><br><span class="line"></span><br><span class="line">  mount -t tmpfs cgroup_root /sys/fs/cgroup</span><br><span class="line">  mkdir /sys/fs/cgroup/cpuset</span><br><span class="line">  mount -t cgroup cpuset -ocpuset /sys/fs/cgroup/cpuset</span><br><span class="line">  cd /sys/fs/cgroup/cpuset</span><br><span class="line">  mkdir Charlie</span><br><span class="line">  cd Charlie</span><br><span class="line">  /bin/echo <span class="number">2</span>-<span class="number">3</span> &gt; cpuset.cpus</span><br><span class="line">  /bin/echo <span class="number">1</span> &gt; cpuset.mems</span><br><span class="line">  /bin/echo $$ &gt; tasks</span><br><span class="line">  sh</span><br><span class="line">  # The subshell <span class="symbol">'sh</span>' <span class="keyword">is</span> now running <span class="keyword">in</span> cgroup Charlie</span><br><span class="line">  # The <span class="keyword">next</span> <span class="literal">line</span> should display '/Charlie'</span><br><span class="line">  cat /proc/self/cgroup</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>使用Docker，减少冗长细节的cgroup使用<br>虽然Docker给我们带来了极大的方便，但是我们还是需要了解一些cgroup的操作使用，这样才更加有信心处理各种问题，</li>
+</ol>
+<p>3.1 使用cgroup-bin<br> 一般操作系统没有默认安装这个工具，我们自己需要安装，提供了很多有趣而且很棒的命令：</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">lssubsys</span> 列出包含<span class="keyword">subsystem的hierarchy</span></span><br><span class="line"><span class="keyword">lscgroup </span>列出所有的cgroup</span><br><span class="line"></span><br><span class="line">/<span class="meta">proc</span>/cgroups 列出了系统中cgroup的<span class="keyword">subsystem</span></span><br><span class="line"><span class="keyword">/proc//cgroup </span> 列出进程所属的cgroup，包含了cgroup的</span><br></pre></td></tr></table></figure>
+<p>3.2 Docker的结合<br>比如我们docker run了一个container，</p>
+<p>先找出contianer的ID，</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="keyword">ps</span> --<span class="keyword">no</span>-<span class="built_in">trunc</span></span><br></pre></td></tr></table></figure>
+<p>根据上面找出的ID，找到对应的tasks ID，</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat  <span class="regexp">/sys/</span>fs<span class="regexp">/cgroup/</span>cpu<span class="regexp">/docker/</span><span class="regexp">/tasks</span></span><br></pre></td></tr></table></figure>
+<p>查看对应的cgroup</p>
+<figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /<span class="keyword">proc</span><span class="comment">//cgroup</span></span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>不同操作系统暴露的subsystem的区别<br>ubuntu就和redhat有所不同，redhat有10中cgroup subsystem<br>如果默认安装的ubuntu，比如14.04， 你会发现，没有net_cls和net_prio，具体如何搞出来，参看这个帖子</li>
+</ol>
+<p>参考资料：</p>
+<ol>
+<li>Linux Kernel Doc about Cgroups<br><a href="https://www.kernel.org/doc/Documentation/cgroups/cgroups.txt" target="_blank" rel="noopener">https://www.kernel.org/doc/Documentation/cgroups/cgroups.txt</a></li>
+<li>Cannot find network subsystem in cgroup on Ubuntu 12.04 LTS<br><a href="http://serverfault.com/questions/485919/cannot-find-network-subsystem-in-cgroup-on-ubuntu-12-04-lts" target="_blank" rel="noopener">http://serverfault.com/questions/485919/cannot-find-network-subsystem-in-cgroup-on-ubuntu-12-04-lts</a></li>
+<li>Redhat cgroup<br> <a href="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Resource_Management_Guide/ch01.html" target="_blank" rel="noopener">https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Resource_Management_Guide/ch01.html</a></li>
+<li>Docker cgroup<br> <a href="https://docs.docker.com/articles/runmetrics/#control-groups" target="_blank" rel="noopener">https://docs.docker.com/articles/runmetrics/#control-groups</a></li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/10/04/如何登录到Docker的container中/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2014/10/04/如何登录到Docker的container中/" itemprop="url">如何登录到Docker的container中</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-10-04T12:24:30+08:00">
+                2014-10-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>使用Docker部署container后，我们总有类似的需求：登录到container中进行一些操作。</p>
+<p>常见的方式</p>
+<ol>
+<li>有ssh方式，特点是不需要特别的root权限，但是container需要安装sshd</li>
+<li>使用nsenter来从container获得一个shell实现登录</li>
+<li>使用nsinit</li>
+</ol>
+<p>本文主要介绍nsenter的使用</p>
+<p>nsenter使用非常方便，但是有的操作系统发行版本util-linux包比较老，所以没有包含这个nsenter，<br>那么你需要自己编译和安装，对于hacker们来说，源码编译安装不是小case嘛，走起！</p>
+<p>注明： 下面的命令运行以<code>Ubuntu 14.04</code>为例</p>
+<p>1）下载源码</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">git</span>://git.kernel.org/pub/scm/utils/util-linux/util-linux.git util-linux</span><br><span class="line">cd util-linux/</span><br></pre></td></tr></table></figure>
+<p>2）安装依赖包（这个具体缺少的情况，会在运行 <code>./autogen.sh</code>的提示，你也可以直接运行3），根据提示来安装对应的依赖包</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="builtin-name">get</span> install libtool</span><br><span class="line">sudo apt-<span class="builtin-name">get</span> install automake</span><br><span class="line">sudo apt-<span class="builtin-name">get</span> install autopoint</span><br><span class="line">sudo apt-<span class="builtin-name">get</span> install libncurses5-dev</span><br></pre></td></tr></table></figure>
+<p>3）编译安装</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">./autogen.sh</span> </span><br><span class="line"><span class="string">./configure</span> &amp; make</span><br></pre></td></tr></table></figure>
+<p>4）测试安装成功</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">./nsenter</span> -V</span><br></pre></td></tr></table></figure>
+<p>5) 将nsenter加入系统环境可执行路径中</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cp <span class="string">./nsenter</span> <span class="string">/usr/bin</span></span><br></pre></td></tr></table></figure>
+<p>如何使用nsenter，非常简单，<br>1) 首先找到container对应的进程ID</p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker <span class="keyword">inspect</span> --<span class="keyword">format</span> <span class="string">"&#123;&#123; .State.Pid &#125;&#125;"</span></span><br></pre></td></tr></table></figure>
+<p>2) 执行nsenter获得一个shell ，假设1）获得id是4308</p>
+<figure class="highlight brainfuck"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">sudo</span> <span class="comment">nsenter</span> <span class="comment"> </span><span class="literal">-</span><span class="literal">-</span><span class="comment">target</span> <span class="comment">4308</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">mount</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">uts</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">ipc</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">net</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">pid</span></span><br></pre></td></tr></table></figure>
+<p>这样就进入到了container中。<br>好了，有的人可能会说attach不是也可以吗？为什么用这个nsenter？<br>个人理解两个功能是完全不一样的，attach相当于找到原始的会话shell，而原始的shell可能是一个循环程序或者web server直接在shell下运行的，这样你如果执行Ctril-C，直接导致对应的container stop，所以这不是我们期望发生的。<br>nsenter则是新创建的一个shell，这样就是新的会话。</p>
+<p>参考资料：</p>
+<ol>
+<li>Why there is no nsenter in util-linux?<br><a href="http://askubuntu.com/questions/439056/why-there-is-no-nsenter-in-util-linux" target="_blank" rel="noopener">http://askubuntu.com/questions/439056/why-there-is-no-nsenter-in-util-linux</a></li>
+<li>在 UOS 上体验 CoreOS<br><a href="https://www.ustack.com/blog/running-coreos-on-uos/" target="_blank" rel="noopener">https://www.ustack.com/blog/running-coreos-on-uos/</a></li>
+<li>Attaching to a container with Docker 0.9 and libcontainer<br><a href="http://jpetazzo.github.io/2014/03/23/lxc-attach-nsinit-nsenter-docker-0-9/" target="_blank" rel="noopener">http://jpetazzo.github.io/2014/03/23/lxc-attach-nsinit-nsenter-docker-0-9/</a></li>
+<li>Docker shell/provisioning without SSH<br><a href="https://github.com/mitchellh/vagrant/issues/4179" target="_blank" rel="noopener">https://github.com/mitchellh/vagrant/issues/4179</a></li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/10/01/Docker的操作学习-attach,detach,volume data/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2014/10/01/Docker的操作学习-attach,detach,volume data/" itemprop="url">Docker的操作学习-attach,detach,volume data</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-10-01T15:15:48+08:00">
+                2014-10-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Docker作为另一类虚拟化技术-容器方案，已经吸引了越来越多的开发和关注，docker在各大操作系统厂商-Ubuntu，Redhat等都提供了很好的集成，更给力的是docker的官方的文档写的非常清晰易懂。下文以ubuntu 14.04为例，对docker的CLI进行简单的学习，</p>
+<p>Docker Hub上提供了大量image可以进行测试练习，所以我们随便选一个</p>
+<ol>
+<li>启动进入一个shell</li>
+</ol>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker <span class="built_in">run</span>  -i -t  <span class="comment">--name web training/webapp /bin/bash</span></span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>Detach 上面的container</li>
+</ol>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">CTRL</span>-p <span class="built_in">CTRL</span>-q</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>Attach上面的container</li>
+</ol>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker <span class="built_in">attach</span> web</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>以background方式运行 container</li>
+</ol>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker <span class="keyword">run</span><span class="bash">  -d -P  training/webapp python app.py</span></span><br></pre></td></tr></table></figure>
+<p>其中 -P 是将container的ports暴露给对于主机所有的interface，比如上面的启动的container，<br>我们可以通过sudo docker ps 查看运行的端口，</p>
+<figure class="highlight x86asm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">f3ca5cd8c307        training/webapp:latest     /bin/bash     <span class="number">24</span> minutes ago      <span class="meta">Up</span> <span class="number">22</span> minutes   <span class="number">0.0</span><span class="meta">.0</span><span class="meta">.0</span>:<span class="number">49154</span>-&gt;<span class="number">5000</span>/tcp   web</span><br></pre></td></tr></table></figure>
+<p>这样，如果Host有多块网卡，每个网卡有不同的ip，所有的ip:49154 都可以访问这个web app了。      </p>
+<ol start="5">
+<li><p>Docker的数据管理及使用       </p>
+<p>docker的Data volumes功能可以:</p>
+<ul>
+<li>对container进行方便的volume创建，</li>
+<li>对host的目录进行快捷的mount到container</li>
+<li>不同container之间通过volume进行数据共享</li>
+<li>对data volume进行方便的backup，restore和migrate</li>
+</ul>
+</li>
+</ol>
+<p>例如：</p>
+<ul>
+<li>创建一个名字是dbdata的container包含dbdata的volume</li>
+</ul>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker run -i -t -v <span class="string">/dbdata</span> <span class="params">--name</span> dbdata training/postgres <span class="string">/bin/bash</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>对上面的container的/dbdata挂载到新的container db1上</li>
+</ul>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker run -i -t  <span class="params">--volumes-from</span> dbdata <span class="params">--name</span> db1 training/postgres <span class="string">/bin/bash</span></span><br></pre></td></tr></table></figure>
+<p>backup 和 restore:</p>
+<ol>
+<li>首先启动一个新的container来对dbdata的data volume数据打包备份到host的当前目录下</li>
+</ol>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker run <span class="params">--volumes-from</span> dbdata -v $<span class="params">(pwd)</span>:<span class="string">/backup</span> training/postgres tar cvf <span class="string">/backup/backup.tar</span> <span class="string">/dbdata</span></span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>创建一个用来restore上面数据的container，名字是dbdata2</li>
+</ol>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker run -v <span class="string">/dbdata</span> <span class="params">--name</span> dbdata2  training/postgres <span class="string">/bin/bash</span></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>un-tar到新创建的container的data volume中</li>
+</ol>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker <span class="keyword">run</span><span class="bash"> --volumes-from dbdata2 -v $(<span class="built_in">pwd</span>):/backup training/postgres tar xvf /backup/backup.tar</span></span><br></pre></td></tr></table></figure>
+<p>很明显，上面的几个步骤通过Host来实现了文件的转存。</p>
+<p>作为外延，读者可以参考更多的资料：</p>
+<ol>
+<li>Docker的技术预览<br><a href="http://www.infoq.com/cn/articles/docker-core-technology-preview" target="_blank" rel="noopener">http://www.infoq.com/cn/articles/docker-core-technology-preview</a></li>
+<li>Docker的源码分析<br><a href="http://www.infoq.com/cn/articles/docker-source-code-analysis-part1?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global&amp;utm_reader=feedly" target="_blank" rel="noopener">http://www.infoq.com/cn/articles/docker-source-code-analysis-part1?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global&amp;utm_reader=feedly</a></li>
+<li>Docker的CLI<br><a href="http://docs.docker.com/reference/commandline/cli/" target="_blank" rel="noopener">http://docs.docker.com/reference/commandline/cli/</a><br><a href="http://docs.docker.com/userguide/dockervolumes/" target="_blank" rel="noopener">http://docs.docker.com/userguide/dockervolumes/</a><br><a href="http://docs.docker.com/userguide/usingdocker/" target="_blank" rel="noopener">http://docs.docker.com/userguide/usingdocker/</a></li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/09/30/Enable 3D acceleration cause Virtual Box guest crash/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2014/09/30/Enable 3D acceleration cause Virtual Box guest crash/" itemprop="url">Enable 3D acceleration cause Virtual Box guest crash</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-09-30T12:44:06+08:00">
+                2014-09-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近遇到的一个问题，每次只要在guest的配置中enable 3D acceleration，就会出现， VirtualBox Manager Stop working，<br>导致guest无法正常的图形界面启动，google 了一下，有个帖子讨论是Virtulbox 的最近版本回归的一个Bug，</p>
+<p>讨论link如下：</p>
+<p><a href="https://forums.virtualbox.org/viewtopic.php?f=6&amp;t=62633" target="_blank" rel="noopener">https://forums.virtualbox.org/viewtopic.php?f=6&amp;t=62633</a><br><a href="https://www.virtualbox.org/ticket/12772" target="_blank" rel="noopener">https://www.virtualbox.org/ticket/12772</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/07/31/Openstack keystone的policy设计处理分析/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2014/07/31/Openstack keystone的policy设计处理分析/" itemprop="url">Openstack keystone的policy设计处理分析</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-07-31T14:45:08+08:00">
+                2014-07-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>keystone设计的policy role based access controls(RBAC)非常有意思，最终暴露给用户的是一种简单的可编辑的语义规则。<br>举个例子如下：</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;   </span><br><span class="line">  <span class="string">...</span> </span><br><span class="line"> <span class="string">"admin_required"</span>: <span class="string">"role:admin or is_admin:1"</span>,</span><br><span class="line"> <span class="string">"identity:get_user"</span>: <span class="string">"rule:admin_required"</span>,</span><br><span class="line"> <span class="string">...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>keystone的policy使用的driver默认配置是如下：<br>driver = keystone.policy.backends.sql.Policy</p>
+<p>每个相应的API的访问请求都会经过相应RBAC的检测，<br>在keystone中的API是通过filterprotected，protected的decorator来作用的，<br>调用入口：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">self</span><span class="selector-class">.policy_api</span><span class="selector-class">.enforce</span>(<span class="selector-tag">creds</span>,</span><br><span class="line">                    <span class="selector-tag">action</span>,</span><br><span class="line">                    <span class="selector-tag">authorization</span><span class="selector-class">.flatten</span>(<span class="selector-tag">policy_dict</span>))</span><br></pre></td></tr></table></figure>
+<p>具体的时序图以get_user为例如下：</p>
+<p>Enforcer这个类其中的enforce方法逻辑如下：</p>
+<figure class="highlight nimrod"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"> ....</span><br><span class="line"> self.load_rules()</span><br><span class="line"></span><br><span class="line"> <span class="comment"># Allow the rule to be a Check tree</span></span><br><span class="line"> <span class="keyword">if</span> isinstance(rule, <span class="type">BaseCheck</span>):</span><br><span class="line">     <span class="literal">result</span> = rule(target, creds, self)</span><br><span class="line"> <span class="keyword">elif</span> <span class="keyword">not</span> self.rules:</span><br><span class="line">     <span class="comment"># No rules to reference means we're going to fail closed</span></span><br><span class="line">     <span class="literal">result</span> = <span class="type">False</span></span><br><span class="line"> <span class="keyword">else</span>:</span><br><span class="line">     <span class="keyword">try</span>:</span><br><span class="line">         <span class="comment"># Evaluate the rule</span></span><br><span class="line">         <span class="literal">result</span> = self.rules[rule](target, creds, self)</span><br><span class="line">     <span class="keyword">except</span> <span class="type">KeyError</span>:</span><br><span class="line">         <span class="type">LOG</span>.debug(_(<span class="string">"Rule [%s] doesn't exist"</span>) % rule)</span><br><span class="line">         <span class="comment"># If the rule doesn't exist, fail closed</span></span><br><span class="line">         <span class="literal">result</span> = <span class="type">False</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>其中各种rule的就是各种规则来实现不同角色的权限管理，<br>具体的rule类层次结构如下：</p>
+<p>下次我们将对其policy语言的解析处理进行详细的分析</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/07/15/chef-server的架构简介/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2014/07/15/chef-server的架构简介/" itemprop="url">chef-server的架构简介</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-07-15T16:38:01+08:00">
+                2014-07-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>chef采用的C/S架构，主要包括chef-server还有chef-client</p>
+<ol>
+<li>总体架构<br>chef-server，控制节点，主要存储相关的cookbook,配置节点的策略，描述注册节点的元数据<br>安装节点，使用chef-client来向server节点获取配置信息，包括recipe，templates，file等，完成节点的配置工作。</li>
+</ol>
+<p>chef为了更好的支持并发，分布式环境，在11.X版本前段的server采用了erlang开发，也就是上面的Erchef 部分。</p>
+<p>各个组件的部分，</p>
+<p>(1)Nginx，前端的http请求的负载均衡<br>(2) WebUI，提供更友好的GUI方式使用chef<br>(3)Erchef，Chef-server的API实现层<br>(4) Bookshelf， 是一种对象存储。按照文件的checksum存储，所以同样的文件只会存取一次，这样不同版本的cookbook的重复的文件不会存储多次。具体可以查看 /var/opt/chef-server/bookshelf/data/bookshelf/目录下的文件<br>(5) Message Queues，采用的rabbitmq，<br>     chef-expander 从消息队列里取出消息，处理成对应的格式，提供给chef-solr做索引<br>     chef-solr对apache solr包装，提供可以进行索引和查找的REST API<br>     索引数据存储的位置是  /var/opt/chef-server/chef-solr/data<br>(6) PostgreSQL,  chef-server的数据存储，<br>    查看具体数据库表结构：<br>      export PATH=$PATH:/opt/chef-server/embedded/bin/<br>      psql -U opscode_chef<br>      \l 列出所有数据库<br>      \dt 列出当前连接数据库的表<br>  数据库相关的存储数据， /var/opt/chef-server/postgresql/data</p>
+<ol start="2">
+<li>核心API server的组件架构</li>
+</ol>
+<p>Erchef具体架构细节：</p>
+<p>根据上面的结构图，可以看到对象的更新时chef_objects和bookshelf的完成<br>chef_authn：实现了chef相关的http请求的签名和验证协议<br>chef-index：和apache solr的交互，对象的增删改，和rabbimq交互。 </p>
+<p>例如：</p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">%% @doc Delete an object from Solr.</span><br><span class="line">%% @<span class="keyword">end</span></span><br><span class="line">%%</span><br><span class="line">%% Note that the guard <span class="keyword">for</span> this <span class="keyword">function</span> <span class="title">recapitulates</span> the chef_indexable_type()</span><br><span class="line">%% custom type.  This <span class="keyword">is</span> done <span class="keyword">out</span> <span class="keyword">of</span> an abundance <span class="keyword">of</span> caution <span class="keyword">and</span></span><br><span class="line">%% paranoia :)</span><br><span class="line">delete(VHost, <span class="keyword">Type</span>, ID, DatabaseName, SolrUrl) <span class="keyword">when</span> <span class="keyword">Type</span> <span class="type">=:= </span><span class="symbol">'client</span>';</span><br><span class="line">                                               <span class="keyword">Type</span> <span class="type">=:= </span><span class="symbol">'data_bag</span>';</span><br><span class="line">                                               <span class="keyword">Type</span> <span class="type">=:= </span><span class="symbol">'data_bag_item</span>';</span><br><span class="line">                                               <span class="keyword">Type</span> <span class="type">=:= </span><span class="symbol">'environment</span>';</span><br><span class="line">                                               <span class="keyword">Type</span> <span class="type">=:= </span><span class="symbol">'node</span>';</span><br><span class="line">                                               <span class="keyword">Type</span> <span class="type">=:= </span><span class="symbol">'role</span>' -&gt;</span><br><span class="line">    PackagedData = package_for_delete(<span class="keyword">Type</span>, ID, DatabaseName, SolrUrl),</span><br><span class="line">    publish(VHost, PackagedData, routing_key(ID)).</span><br></pre></td></tr></table></figure>
+<p>chef_objects：定义了chef内部的一些对象，environment，node，data bag等<br>chef_db: chef-server的数据库层逻辑，<br>chef_wm： 包含了erchef的rest api实现和路由定义</p>
+<ol start="3">
+<li><p>Chef-client执行流程：</p>
+<p>A “chef-client run” is the term used to describe a series of steps that are taken by the chef-client when it is configuring a node. The following diagram shows the various stages that occur during the chef-client run, and then the list below the diagram describes in greater detail each of those stages. </p>
+</li>
+</ol>
+<p>参考资料:</p>
+<ol>
+<li>chef-server.rb Optional Settings <a href="http://docs.opscode.com/config_rb_chef_server_optional_settings.html" target="_blank" rel="noopener">http://docs.opscode.com/config_rb_chef_server_optional_settings.html</a></li>
+<li>Monitor <a href="http://docs.opscode.com/server_monitor.html" target="_blank" rel="noopener">http://docs.opscode.com/server_monitor.html</a></li>
+<li>chef-client  <a href="http://docs.opscode.com/chef_client.html" target="_blank" rel="noopener">http://docs.opscode.com/chef_client.html</a></li>
+<li>Erchef <a href="https://github.com/opscode/erchef" target="_blank" rel="noopener">https://github.com/opscode/erchef</a></li>
+<li>chef-server <a href="http://docs.opscode.com/server_components.html" target="_blank" rel="noopener">http://docs.opscode.com/server_components.html</a></li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/06/22/Redhat 7的kernel新看点/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2014/06/22/Redhat 7的kernel新看点/" itemprop="url">Redhat 7的kernel新看点</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-06-22T11:38:07+08:00">
+                2014-06-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Redhat 2014的summit关于RHEL 的roadmap中，关于kernel的部分，讲了很有意思的一些新特点，<br>主要包括，架构，内存管理，调度和锁机制的改进，性能提升，debug，还有container….</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">RHEL 7 Kernel Architecture Support</span><br><span class="line">1） Architectures</span><br><span class="line">Support the following 64 bits Architectures</span><br><span class="line">X86_64, Power, and s390</span><br><span class="line"><span class="keyword">with</span> <span class="number">32</span><span class="built_in">bit</span> <span class="keyword">user</span> <span class="keyword">space</span> <span class="keyword">compatibility</span> support</span><br><span class="line"><span class="number">2</span>） Theoretical Limits <span class="keyword">on</span> X86_64</span><br><span class="line">–<span class="keyword">Logical</span> CPU – maximum <span class="number">5120</span> <span class="keyword">logical</span> CPUs</span><br><span class="line">–<span class="keyword">Memory</span> – maximum <span class="number">64</span>T</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">Resource</span> <span class="keyword">Management</span> Improvements</span><br><span class="line"><span class="number">1</span>）Linux Containers (LXC) – Fully Supported <span class="keyword">in</span> RHEL <span class="number">7</span> RC</span><br><span class="line"><span class="number">2</span>）Control <span class="keyword">Groups</span>: cpu, cpuset, <span class="keyword">memory</span>, <span class="keyword">block</span> io, network, network prio</span><br><span class="line"><span class="number">3</span>）Libcgroup has been deprecated, replacing <span class="keyword">with</span> systemd<span class="string">'s scope and slices</span></span><br><span class="line"><span class="string">4）Namespaces: mount, UTS, IPC, PID, network</span></span><br><span class="line"><span class="string">5）User Namespace – in later releases</span></span><br><span class="line"><span class="string">6）SELinux – security protection for containers</span></span><br><span class="line"><span class="string">7）SystemD – provide unit file to help setup container’s resources</span></span><br><span class="line"><span class="string">8）Docker CLI</span></span><br></pre></td></tr></table></figure>
+<p>其实container才是我感兴趣的地方，Docker公司最近发布的1.0可谓在业界风生水起，</p>
+<pre><code>    What is Docker&apos;s architecture?
+
+    Docker uses a client-server architecture. The Docker client talks to the
+Docker daemon, which does the heavy lifting of building, running, and
+distributing your Docker containers. Both the Docker client and the daemon can run on the same system, or you can connect a Docker client to a remote Docker
+daemon. The Docker client and service communicate via sockets or through a
+RESTful API.
+
+
+    The Docker daemon
+
+    As shown in the diagram above, the Docker daemon runs on a host machine. The
+user does not directly interact with the daemon, but instead through the Docker
+client.
+
+
+    The Docker client
+
+    The Docker client, in the form of the docker binary, is the primary user
+interface to Docker. It accepts commands from the user and communicates back and
+forth with a Docker daemon.
+
+    Inside Docker
+
+    To understand Docker&apos;s internals, you need to know about three components:
+        - Docker images.
+        - Docker registries.
+        - Docker containers.
+</code></pre><p>参考资料：</p>
+<ol>
+<li><a href="http://docs.docker.com/introduction/understanding-docker/#what-is-dockers-architecture" target="_blank" rel="noopener">http://docs.docker.com/introduction/understanding-docker/#what-is-dockers-architecture</a></li>
+<li>Redhat 2014 Summit                                   </li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/06/17/ubuntu 14.04虚拟机无法挂载vboxsf的问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2014/06/17/ubuntu 14.04虚拟机无法挂载vboxsf的问题/" itemprop="url">ubuntu 14.04虚拟机无法挂载vboxsf的问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-06-17T11:17:09+08:00">
+                2014-06-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>环境：virtualbox 4.3.10<br>虚拟机： ubuntu 14.04</p>
+<p>问题：</p>
+<p>今天要挂载一个share folders 突然发现无法挂载，然后查了一下，原来是bad link导致的问题，修复后，正常使用。</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">test@test-VirtualBox1404:~$ sudo mount -t vboxsf <span class="keyword">vm</span>-mount /mnt/share</span><br><span class="line">moun<span class="variable">t:</span> wrong fs <span class="built_in">type</span>, <span class="keyword">bad</span> option, <span class="keyword">bad</span> superblock <span class="keyword">on</span> <span class="keyword">vm</span>-mount,</span><br><span class="line">       missing codepage <span class="built_in">or</span> helper program, <span class="built_in">or</span> other error</span><br><span class="line">       (<span class="keyword">for</span> several filesystems (<span class="keyword">e</span>.g. nfs, cifs) you might</span><br><span class="line">       need <span class="keyword">a</span> /sbin/mount. helper program)</span><br><span class="line">       In some cases useful info <span class="keyword">is</span> found in syslog - <span class="keyword">try</span></span><br><span class="line">       dmesg | tail  <span class="built_in">or</span> <span class="keyword">so</span></span><br></pre></td></tr></table></figure>
+<p>解决方法：</p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s /opt/VBoxGuestAdditions-<span class="number">4.3</span>.<span class="number">10</span>/<span class="class"><span class="keyword">lib</span>/<span class="title">VBoxGuestAdditions</span> /<span class="title">usr</span>/<span class="title">lib</span>/<span class="title">VBoxGuestAdditions</span></span></span><br></pre></td></tr></table></figure>
+<p>参考帖子：</p>
+<p><a href="http://askubuntu.com/questions/458286/getting-an-error-wrong-fs-type-bad-option-bad-superblock-on-ubuntushared" target="_blank" rel="noopener">http://askubuntu.com/questions/458286/getting-an-error-wrong-fs-type-bad-option-bad-superblock-on-ubuntushared</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/05/31/Local Area Connection doesn't have a valid IP configuration /">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2014/05/31/Local Area Connection doesn't have a valid IP configuration /" itemprop="url">Local Area Connection doesn't have a valid IP configuration</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-05-31T15:58:01+08:00">
+                2014-05-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>今天办公突然发现windows7网络链接有问题了，检查网线，网线接口都没有问题，那肯定出在操作系统这边，</p>
+<p>网络诊断提示:</p>
+<figure class="highlight monkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Local</span> Area Connection doesn<span class="comment">'t have a valid IP configuration</span></span><br></pre></td></tr></table></figure>
+<p>莫名其妙，google一下，发现有些干货，真的很给力，解决了问题，这样你就不用苦恼的重装系统了（最笨最郁闷的方法）</p>
+<p>帖子内容如下：（黑体字体部分就是解决方法）</p>
+<p>Hey everyone,  I’ve had this problem for days with my home router on windows7.  Try these two commands and restart.  it worked for me.<br>Link of Website is below also.</p>
+<ol start="2">
+<li>Reset WinSock and TCP/IP Stack<br>Open a Command Prompt as administrator:<br><strong>Reset WINSOCK entries:</strong> <pre><code>netsh winsock reset catalog
+</code></pre><strong>Reset TCP/IP stack:</strong><pre><code>netsh int ip reset reset.log
+</code></pre><strong>Reboot the machine</strong><br>(you can run both commands first, I tend to put multiple commands in notepad and then copy and paste into the command window).<br>I can also confirm that this is the only solution that worked for me. I entered the second command and rebooted computer. Upon restart my internet functionality was returned.<br>You can find the original article on the microsoft website at: <a href="http://support.microsoft.com/kb/299357" target="_blank" rel="noopener">http://support.microsoft.com/kb/299357</a></li>
+</ol>
+<p>感谢分享，世界才变得更美好。</p>
+<p>参考资料：</p>
+<p><a href="http://social.technet.microsoft.com/Forums/windows/en-US/55aa9f24-e8ea-4743-8e04-120decfb6122/local-area-connection-doesnt-have-a-valid-ip-configuration-w7?forum=w7itpronetworking" target="_blank" rel="noopener">http://social.technet.microsoft.com/Forums/windows/en-US/55aa9f24-e8ea-4743-8e04-120decfb6122/local-area-connection-doesnt-have-a-valid-ip-configuration-w7?forum=w7itpronetworking</a>                                   </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/05/16/ubuntu 14.04 运行devstack/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2014/05/16/ubuntu 14.04 运行devstack/" itemprop="url">ubuntu 14.04 运行devstack</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-05-16T16:53:47+08:00">
+                2014-05-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>前段时间的ubuntu的14.04的发布，可谓一直就想试试新的用户体验，软件工程师要有尝试新鲜事物的精神是吧，不是“神精”</p>
+<p>下载iso，挂载virtualbox的新创建的虚拟机上，</p>
+<ol>
+<li>下载代码</li>
+</ol>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">https</span>://github.com/openstack-dev/devstack.git</span><br></pre></td></tr></table></figure>
+<p>这个是master的branch就是针对openstack Juno的分支</p>
+<ol start="2">
+<li>配置 （根据自己的环境配置相应的***地方）</li>
+</ol>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[[local|localrc]]</span></span><br><span class="line"><span class="attr">ENABLED_SERVICES</span>=<span class="string">"$ENABLED_SERVICES,-rabbit,-zeromq,qpid"</span></span><br><span class="line"><span class="attr">ENABLED_SERVICES</span>=<span class="string">"$ENABLED_SERVICES,-n-net,q-svc,q-agt,q-dhcp,q-l3,q-meta,q-metering,neutron,tempest"</span></span><br><span class="line"><span class="attr">ADMIN_PASSWORD</span>=***</span><br><span class="line"><span class="attr">MYSQL_PASSWORD</span>=***</span><br><span class="line"><span class="attr">SERVICE_PASSWORD</span>=<span class="variable">$ADMIN_PASSWORD</span></span><br><span class="line"><span class="attr">LOGFILE</span>=<span class="variable">$DEST</span>/logs/stack.sh.log</span><br><span class="line"><span class="attr">HOST_IP</span>=*****</span><br><span class="line"><span class="attr">KEYSTONE_CATALOG_BACKEND</span>=sql</span><br><span class="line"><span class="attr">SERVICE_TOKEN</span>=***</span><br><span class="line"></span><br><span class="line"><span class="attr">QPID_USERNAME</span>=***</span><br><span class="line"><span class="attr">QPID_PASSWORD</span>=***</span><br><span class="line"></span><br><span class="line"><span class="attr">FLOATING_RANGE</span>=***</span><br><span class="line"><span class="attr">FIXED_RANGE</span>=***</span><br><span class="line"><span class="attr">FIXED_NETWORK_SIZE</span>=**</span><br><span class="line"><span class="attr">FLAT_INTERFACE</span>=eth1</span><br><span class="line"><span class="attr">NETWORK_GATEWAY</span>=****</span><br><span class="line"><span class="attr">PUBLIC_NETWORK_GATEWAY</span>=***</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>运行</li>
+</ol>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./<span class="keyword">stack</span>.<span class="keyword">sh</span></span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>执行完毕，openstack的一切服务运行良好</li>
+</ol>
+<p>虽然devstack的主页没写支持ubuntu 14.04，但细细想想ubuntu多年前押宝到openstack，作为社区广泛流行的支持OS LTS的版本自然要相当重视，<br>应该是ubuntu团队对devstack贡献了不少代码，保证发布的14.04完美支持吧</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/10/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" href="/page/12/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Kai Qiang Wu</p>
+              <p class="site-description motion-element" itemprop="description">This is a place for thinking and writing</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">252</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/HackToday" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Kai Qiang Wu</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+        
+<div class="busuanzi-count">
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> Visitor
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> Total Visit
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,2280 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-cn,en,default">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="This is a place for thinking and writing">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HackToday Walk Blog">
+<meta property="og:url" content="http://yoursite.com/page/3/index.html">
+<meta property="og:site_name" content="HackToday Walk Blog">
+<meta property="og:description" content="This is a place for thinking and writing">
+<meta property="og:locale" content="zh-cn">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HackToday Walk Blog">
+<meta name="twitter:description" content="This is a place for thinking and writing">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/3/">
+
+
+
+
+
+  <title>HackToday Walk Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-cn">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">HackToday Walk Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/22/Linuxkit 在 OpenStack Ocota 版本的实验/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/22/Linuxkit 在 OpenStack Ocota 版本的实验/" itemprop="url">Linuxkit 在 OpenStack Ocota 版本的实验</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-22T08:06:02+08:00">
+                2017-06-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>测试环境 CentOS 7.3</p>
+<p>需要说明关于 Devstack 部分，不同的 OS 除了本身 Devstack 默认安装基本步骤一样，还有不同的额外步骤，有的不需要（比如下面的一些防火墙的规则，可能 Ubuntu 默认安装的就不需要）</p>
+<p>说一下这个实验的思路，就是 Linuxkit 本身是可以 build VM 镜像的，而 OpenStack 本身又是一款包含有虚拟化管理功能的软件，那么我们希望试试 LinuxKit 自身build的镜像是不是可以很好的运行在 OpenStack 这个平台上。具体步骤如下：</p>
+<ol>
+<li>搭建 OpenStack 环境<br>方法1： 使用 Devstack<br>优点，简单，快速，定位解决问题方便<br>缺点，有些自定义的配置比较多，可以参考 Devstack 详细解释文档，一般不需要</li>
+</ol>
+<p>方法2： 使用 RDO （因为是 CentOS 环境）<br>优点：基本不需要自定义话配置<br>缺点：使用 RDO 前置条件较多，除了配置源之外，还需要对防火墙等做一些处理。因为集成了 puppet， 所以不熟悉 puppet的话，出了问题，定位解决不方便。网上资料虽多，但是还是不如 DevStack </p>
+<p>最初尝试了 RDO，试了几次均不成功，发现除了一些模块相关的问题（我拿到手的这台 CentOS 机器也是被做了一些自定义配置，有些不知名的问题，比如 ipv4 iptables 中 filter 规则不识别，ipv6 模块加载不正常等），还最会报错 sql connection 配置没有。 </p>
+<p>因为我们今天的重点不是研究怎么部署 OpenStack, 所以就没功夫调试 RDO 了，投入了 DevStack 的怀抱</p>
+<p>DevStack 老方法，文档也介绍的很详细，不再累赘了，请参考文献【1】</p>
+<p>说几个在 DevStack 中没有提到的，就是最新版的devstack 在 CentOS 安装后，需要开启对应的 80， 443 端口，要不然你在其他机器上无法访问 Horizon Dashboard， 具体就是参考文献【2】</p>
+<p>/etc/sysconfig/iptables 加入下面的两条规则，然后重启 iptables 服务</p>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-A INPUT -p tcp -m <span class="keyword">multiport </span>--dports <span class="number">443</span> -<span class="keyword">j </span>ACCEPT</span><br><span class="line">-A INPUT -p tcp -m <span class="keyword">multiport </span>--dports <span class="number">80</span> -<span class="keyword">j </span>ACCEPT</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li><p>搭建完 DevStack 基本就完了，如果还有其他的需要的话（比如通过虚拟机ping 主机 IP），你可能在 tcpdump 发现有admin prohibited 日志，那么就需要参考文献【4】进行防火墙规则的更新。</p>
+</li>
+<li><p>部署 DevStack 后，简单的部署一个 Cirros 镜像，然后测试 private ip 连通性，分配一个 floating ip，测试联通性（假设你添加的securitygroups 中包含了对相应协议端口的开放，比如 ICMP，DNS 等）</p>
+</li>
+<li><p>下面开始导入 Linuxkit 镜像，这里以 sshd 镜像为例，具体怎么 Build， 在我的博客中文献【5】也做了介绍</p>
+</li>
+<li><p>上传 sshd qcow2 镜像 （当然可以使用 kernel+inittrd ramdisk 方式） 到 OpenStack Glance， 这里简化通过 dashboard 操作，不用命令行，如下图所示：</p>
+</li>
+</ol>
+<ol start="6">
+<li><p>部署镜像，关联 float ip （上面的图中的ip  172.24.4.5）</p>
+</li>
+<li><p>验证测试效果, 如下图所示：</p>
+</li>
+</ol>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[root@mytestpc ~]<span class="meta"># ssh 172.24.4.5</span></span><br><span class="line">Welcome to LinuxKit</span><br><span class="line"><span class="symbol">moby:</span>~<span class="meta"># whoami</span></span><br><span class="line">root</span><br><span class="line"><span class="symbol">moby:</span>~<span class="meta"># ls</span></span><br><span class="line"><span class="symbol">moby:</span>~<span class="meta"># ps -ef | grep ssh</span></span><br><span class="line">  <span class="number">317</span> root       <span class="number">0</span>:<span class="number">00</span> ctr run --runtime-config <span class="meta-keyword">/containers/</span>services<span class="meta-keyword">/sshd/</span>config.json --rootfs <span class="meta-keyword">/containers/</span>services<span class="meta-keyword">/sshd/</span>rootfs --id sshd</span><br><span class="line">  <span class="number">427</span> root       <span class="number">0</span>:<span class="number">00</span> <span class="meta-keyword">/sbin/</span>tini <span class="meta-keyword">/usr/</span>bin/ssh.sh</span><br><span class="line">  <span class="number">524</span> root       <span class="number">0</span>:<span class="number">00</span> <span class="meta-keyword">/usr/</span>sbin/sshd -D -e</span><br><span class="line">  <span class="number">548</span> root       <span class="number">0</span>:<span class="number">00</span> sshd: root@pts/<span class="number">0</span></span><br><span class="line">  <span class="number">554</span> root       <span class="number">0</span>:<span class="number">00</span> grep ssh</span><br><span class="line"><span class="symbol">moby:</span>~<span class="meta">#</span></span><br></pre></td></tr></table></figure>
+<ol start="8">
+<li>当然我们也可以测试 linuxkit 中 redis 镜像，如下</li>
+</ol>
+<p>验证如下：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[root@mytestpc ~]# redis-cli  -h 172.24.4.3</span><br><span class="line">172.24.4.3:6379&gt; help</span><br><span class="line">redis-cli 3.2.8</span><br><span class="line"><span class="keyword">To</span> <span class="builtin-name">get</span> help about Redis commands type:</span><br><span class="line">      <span class="string">"help @"</span> <span class="keyword">to</span> <span class="builtin-name">get</span> a list of commands <span class="keyword">in</span></span><br><span class="line">      <span class="string">"help "</span> <span class="keyword">for</span> help on</span><br><span class="line">      <span class="string">"help "</span> <span class="keyword">to</span> <span class="builtin-name">get</span> a list of possible help topics</span><br><span class="line">      <span class="string">"quit"</span> <span class="keyword">to</span> exit</span><br><span class="line"></span><br><span class="line"><span class="keyword">To</span> <span class="builtin-name">set</span> redis-cli perferences:</span><br><span class="line">      <span class="string">":set hints"</span> <span class="builtin-name">enable</span> online hints</span><br><span class="line">      <span class="string">":set nohints"</span> <span class="builtin-name">disable</span> online hints</span><br><span class="line"><span class="builtin-name">Set</span> your preferences <span class="keyword">in</span> ~/.redisclirc</span><br><span class="line">172.24.4.3:6379&gt;</span><br></pre></td></tr></table></figure>
+<p>参考：</p>
+<ol>
+<li><a href="https://docs.openstack.org/developer/devstack/" target="_blank" rel="noopener">https://docs.openstack.org/developer/devstack/</a></li>
+<li><a href="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux_OpenStack_Platform/2/html/Getting_Started_Guide/chap-Deploying_The_Dashboard.html" target="_blank" rel="noopener">https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux_OpenStack_Platform/2/html/Getting_Started_Guide/chap-Deploying_The_Dashboard.html</a></li>
+<li><a href="http://linuxwiki.github.io/NetTools/tcpdump.html" target="_blank" rel="noopener">http://linuxwiki.github.io/NetTools/tcpdump.html</a></li>
+<li><a href="http://blog.chinaunix.net/uid-21335514-id-5403664.html" target="_blank" rel="noopener">http://blog.chinaunix.net/uid-21335514-id-5403664.html</a></li>
+<li><a href="http://blog.chinaunix.net/uid-21335514-id-5765203.html" target="_blank" rel="noopener">http://blog.chinaunix.net/uid-21335514-id-5765203.html</a></li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/14/Django Migration 的 Cannot add foreign key constraint 问题解决/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/14/Django Migration 的 Cannot add foreign key constraint 问题解决/" itemprop="url">Django Migration 的 Cannot add foreign key constraint 问题解决</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-14T07:59:20+08:00">
+                2017-06-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近在 Django 项目执行 Migration 的时候发现一个奇怪的报错：</p>
+<figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">File <span class="string">"/usr/lib64/python2.7/site-packages/django/db/backends/mysql/base.py"</span>, line 124, in execute</span><br><span class="line"></span><br><span class="line">return self.cursor.execute(query, args)</span><br><span class="line"></span><br><span class="line">File <span class="string">"/usr/lib64/python2.7/site-packages/MySQLdb/cursors.py"</span>, line 205, in execute</span><br><span class="line"></span><br><span class="line">self.errorhandler(self, exc, value)</span><br><span class="line"></span><br><span class="line">File <span class="string">"/usr/lib64/python2.7/site-packages/MySQLdb/connections.py"</span>, line 36, in defaulterrorhandler</span><br><span class="line"></span><br><span class="line">raise errorclass, errorvalue</span><br><span class="line"></span><br><span class="line">django.db.utils.IntegrityError: (1215, 'Cannot<span class="built_in"> add </span>foreign key constraint')</span><br></pre></td></tr></table></figure>
+<p>在新数据库 CI Migration 测试中是没有发现这类问题的，后来 Google 发现有类似的问题和分析 [1]，于是整理一下，以备其他人参考<br>这是因为老系统原来的表使用的是 MyISAM 引擎，但是现在 MySQL 新版本默认的表都是 InnoDB 了，而 MyISAM 是不支持外键约束的。<br>MyISAM  在 MySQL 5.5.1 之前是默认的引擎<br>InnoDB   在 MySQL 5.5 之后是默认的引擎</p>
+<p>所以如果你的老的表是 MyISAM，而新表对此有外键引入， 那么自然会报上面的错误了。</p>
+<p>解决方法也很简单：（修改旧表引擎为 InnoDB），具体如下：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span>   <span class="keyword">ENGINE</span> = <span class="keyword">InnoDB</span>;</span><br></pre></td></tr></table></figure>
+<p>如何查看表的信息：</p>
+<ol>
+<li>查看所有表的信息</li>
+</ol>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SHOW</span> <span class="keyword">TABLE</span> <span class="keyword">STATUS</span> <span class="keyword">FROM</span> <span class="string">`DB_NAME`</span>;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>查看某个表的信息</li>
+</ol>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SHOW</span> <span class="keyword">TABLE</span> <span class="keyword">STATUS</span> <span class="keyword">FROM</span> <span class="string">`DB_NAME`</span> <span class="keyword">LIKE</span> <span class="string">'TABLE_NAME'</span>;</span><br></pre></td></tr></table></figure>
+<p>参考资料：</p>
+<ol>
+<li><a href="https://stackoverflow.com/questions/6178816/django-cannot-add-or-update-a-child-row-a-foreign-key-constraint-fails" target="_blank" rel="noopener">https://stackoverflow.com/questions/6178816/django-cannot-add-or-update-a-child-row-a-foreign-key-constraint-fails</a></li>
+<li><a href="https://stackoverflow.com/questions/12614541/whats-the-difference-between-myisam-and-innodb" target="_blank" rel="noopener">https://stackoverflow.com/questions/12614541/whats-the-difference-between-myisam-and-innodb</a></li>
+<li><a href="https://stackoverflow.com/questions/4515490/how-do-i-know-if-a-mysql-table-is-using-myisam-or-innodb-engine" target="_blank" rel="noopener">https://stackoverflow.com/questions/4515490/how-do-i-know-if-a-mysql-table-is-using-myisam-or-innodb-engine</a></li>
+<li><a href="https://dev.mysql.com/doc/refman/5.6/en/storage-engine-setting.html" target="_blank" rel="noopener">https://dev.mysql.com/doc/refman/5.6/en/storage-engine-setting.html</a></li>
+<li><a href="https://github.com/divio/django-filer/issues/939" target="_blank" rel="noopener">https://github.com/divio/django-filer/issues/939</a></li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/08/Linuxkit 源码分析，从开始到镜像构建完成/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/08/Linuxkit 源码分析，从开始到镜像构建完成/" itemprop="url">Linuxkit 源码分析，从开始到镜像构建完成</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-08T22:32:39+08:00">
+                2017-06-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在上一篇【1】中我们介绍了 “Linuxkit 中的 kernel+initrd 镜像启动过程”，那么我们接下来看看 Linuxkit 是如何一步一步构造出 kernel +initrd 这些镜像的。</p>
+<p>首先看一下 Moby  结构体定义，基本和 yml 中支持的属性一一对应</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">23</span> <span class="comment">// Moby is the type of a Moby config file</span></span><br><span class="line"> <span class="number">24</span> type Moby struct &#123;         </span><br><span class="line"> <span class="number">25</span>     Kernel struct &#123;</span><br><span class="line"> <span class="number">26</span>         Image   <span class="type">string</span>     </span><br><span class="line"> <span class="number">27</span>         Cmdline <span class="type">string</span>     </span><br><span class="line"> <span class="number">28</span>     &#125;</span><br><span class="line"> <span class="number">29</span>     Init     []<span class="type">string</span>     </span><br><span class="line"> <span class="number">30</span>     Onboot   []MobyImage   </span><br><span class="line"> <span class="number">31</span>     Services []MobyImage   </span><br><span class="line"> <span class="number">32</span>     Trust    TrustConfig   </span><br><span class="line"> <span class="number">33</span>     Files    []struct &#123;   </span><br><span class="line"> <span class="number">34</span>         Path      <span class="type">string</span>   </span><br><span class="line"> <span class="number">35</span>         Directory bool     </span><br><span class="line"> <span class="number">36</span>         Symlink   <span class="type">string</span>   </span><br><span class="line"> <span class="number">37</span>         Contents  <span class="type">string</span>   </span><br><span class="line"> <span class="number">38</span>     &#125;</span><br><span class="line"> <span class="number">39</span>     Outputs []struct &#123;     </span><br><span class="line"> <span class="number">40</span>         Format <span class="type">string</span>     </span><br><span class="line"> <span class="number">41</span>     &#125;</span><br><span class="line"> <span class="number">42</span> &#125;</span><br><span class="line"> <span class="number">43</span></span><br></pre></td></tr></table></figure>
+<p>NewConfig（parse yml config 文件）   –&gt; buildInternal (实际的 build 过程)  –&gt;  outputs （生成相应格式的镜像）</p>
+<p>其中 buildInternal 的过程如下</p>
+<figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--&gt; <span class="function"><span class="title">dockerPull</span>   --&gt;</span> I<span class="function"><span class="title">mageExtract</span>  --&gt;</span> untarKernel</span><br></pre></td></tr></table></figure>
+<p>下载 Kernel 对应的 image，从对应的镜像中提取文件系统并返回一个 tar，从 tar 中提取出 kernel 、 kernel.tar 并放到新的 tar 文件中（initrdAppend 操作），tar 文件为了区分 kernel 和 其他文件，对 kernel 设置了 tar header 字段（boot/kernel boot/cmdline）</p>
+<p>对于 Init 镜像都要解压，并且添加到上面新的tar 文件中（initrdAppend）</p>
+<p>对于 Onboot 镜像，执行以下操作：<br>ConfigToOCI(image) ，   –&gt; ImageBundle（对应目录为/containers/onboot/）  –&gt; 同样添加到文件中 （initrdAppend）</p>
+<p>对于 service 镜像，执行以下操作：<br> ConfigToOCI(image)    –》 ImageBundle（对应目录为 /containers/services/）  –&gt; 同样添加到文件中 （initrdAppend )</p>
+<p>最后是添加一些额外的文件，程序需要的，比如 ssh key 文件（initrdAppend）</p>
+<p>–&gt;  outputs<br>按照 yml 中的输出格式，输出对应的文件，这里以 kernel+initrd 举例<br>输出对应的 kernel + initrd 文件，其中 kernel 和 initrd 是在前面的 tar 包装的时候，都有设置了对应的 tar header，所以可以从一个文件中抽取出 kernel，剩下的就是 initrd 文件</p>
+<p>对于其他虚拟机镜像格式，其实就是讲对应的 kernel + initrd 打包成对应的镜像格式比如 qcow2</p>
+<p>那么对于上述构造的 VM 镜像，里面的容器如何自动运行起来的。那么我们就需要理解前面讲的 kernel +initrd 的启动过程，在 BIOS 自检后，bootloder 开始加载 kernel +initramfs， 那么我们从下面将这里如何对应到 moby 构建的镜像里面的代码</p>
+<p>initrd 上面除了包含一些 modules， 还包含 init， onboot， services 镜像，其中 kernel+ initrd 配合完成对应的真正 root 挂载后，控制权交给了/sbin/init</p>
+<p>init 进程，开始根据  /etc/inittab 中进行进程的派生，看卡 inittab 什么样子</p>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">/ # cat /etc/inittab</span><br><span class="line"># /etc/inittab</span><br><span class="line"></span><br><span class="line"><span class="meta">::sysinit:/etc/init.d/rcS</span></span><br><span class="line"><span class="meta">::once:/etc/init.d/containerd</span></span><br><span class="line"><span class="meta">::once:/etc/init.d/containers</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span> Stuff to do for the 3-finger salute</span><br><span class="line"><span class="meta">::ctrlaltdel:/sbin/reboot</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span> Stuff to do before rebooting</span><br><span class="line"><span class="meta">::shutdown:/usr/sbin/killall5</span> -15</span><br><span class="line"><span class="meta">::shutdown:/bin/sleep</span> 5</span><br><span class="line"><span class="meta">::shutdown:/usr/sbin/killall5</span> -9</span><br><span class="line"><span class="meta">::shutdown:/bin/echo</span> "Unmounting filesystems"</span><br><span class="line"><span class="meta">::shutdown:/bin/umount</span> -a -r</span><br><span class="line">ttyS0::once:cat /etc/issue</span><br><span class="line">ttyS0::respawn:/sbin/getty -n -l /bin/sh -L 115200 ttyS0 vt100</span><br><span class="line">tty0::once:cat /etc/issue</span><br><span class="line">tty0::respawn:/sbin/getty -n -l /bin/sh  38400 tty0</span><br></pre></td></tr></table></figure>
+<p>我们看到了熟悉的 /etc/init.d/containerd 和  /etc/init.d/containers，其中 containerd 是容器运行控制进程，首先启动。接着对于所有的containers 进行 roofs 的挂载，runc 调用运行这些容器，代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">/ <span class="comment"># cat /etc/init.d/containers</span></span><br><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># start onboot containers, run to completion</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ -d /containers/onboot ]</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">    <span class="keyword">for</span> f <span class="keyword">in</span> $(find /containers/onboot -mindepth 1 -maxdepth 1 | sort)</span><br><span class="line">    <span class="keyword">do</span></span><br><span class="line">        base=<span class="string">"<span class="variable">$(basename $f)</span>"</span></span><br><span class="line">        /bin/mount --<span class="built_in">bind</span> <span class="string">"<span class="variable">$f</span>/rootfs"</span> <span class="string">"<span class="variable">$f</span>/rootfs"</span></span><br><span class="line">        mount -o remount,rw <span class="string">"<span class="variable">$f</span>/rootfs"</span></span><br><span class="line">        /usr/bin/runc run --bundle <span class="string">"<span class="variable">$f</span>"</span> <span class="string">"<span class="variable">$(basename $f)</span>"</span></span><br><span class="line">        <span class="built_in">printf</span> <span class="string">" - <span class="variable">$base</span>\n"</span></span><br><span class="line">    <span class="keyword">done</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># start service containers</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ -d /containers/services ]</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">    <span class="keyword">for</span> f <span class="keyword">in</span> $(find /containers/services -mindepth 1 -maxdepth 1 | sort)</span><br><span class="line">    <span class="keyword">do</span></span><br><span class="line">        base=<span class="string">"<span class="variable">$(basename $f)</span>"</span></span><br><span class="line">        /bin/mount --<span class="built_in">bind</span> <span class="string">"<span class="variable">$f</span>/rootfs"</span> <span class="string">"<span class="variable">$f</span>/rootfs"</span></span><br><span class="line">        mount -o remount,rw <span class="string">"<span class="variable">$f</span>/rootfs"</span></span><br><span class="line">        <span class="built_in">log</span>=<span class="string">"/var/log/<span class="variable">$base</span>.log"</span></span><br><span class="line">        ctr run --runtime-config <span class="string">"<span class="variable">$f</span>/config.json"</span> --rootfs <span class="string">"<span class="variable">$f</span>/rootfs"</span> --id <span class="string">"<span class="variable">$(basename $f)</span>"</span> <span class="variable">$log</span> &gt;<span class="variable">$log</span> &amp;</span><br><span class="line">        <span class="built_in">printf</span> <span class="string">" - <span class="variable">$base</span>\n"</span></span><br><span class="line">    <span class="keyword">done</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">wait</span></span><br></pre></td></tr></table></figure>
+<p>通过mount 查看里面的挂载情况：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">tmpfs on /var<span class="built_in"> type </span>tmpfs (rw,nosuid,nodev,noexec,relatime)</span><br><span class="line">tmpfs on /containers/onboot/000-sysctl/rootfs<span class="built_in"> type </span>tmpfs (rw,relatime)</span><br><span class="line">tmpfs on /containers/onboot/001-sysfs/rootfs<span class="built_in"> type </span>tmpfs (rw,relatime)</span><br><span class="line">tmpfs on /containers/onboot/002-binfmt/rootfs<span class="built_in"> type </span>tmpfs (rw,relatime)</span><br><span class="line">tmpfs on /containers/onboot/003-format/rootfs<span class="built_in"> type </span>tmpfs (rw,relatime)</span><br><span class="line">tmpfs on /containers/onboot/004-mount/rootfs<span class="built_in"> type </span>tmpfs (rw,relatime)</span><br><span class="line">tmpfs on /containers/services/dhcpcd/rootfs<span class="built_in"> type </span>tmpfs (rw,relatime)</span><br><span class="line">tmpfs on /containers/services/docker/rootfs<span class="built_in"> type </span>tmpfs (rw,relatime)</span><br><span class="line">tmpfs on /containers/services/ntpd/rootfs<span class="built_in"> type </span>tmpfs (rw,relatime)</span><br><span class="line">tmpfs on /containers/services/rngd/rootfs<span class="built_in"> type </span>tmpfs (rw,relatime)</span><br></pre></td></tr></table></figure>
+<p>如此，就完成了 VM 启动后的容器的自动运行</p>
+<p>参考：</p>
+<ol>
+<li><a href="http://blog.chinaunix.net/uid-21335514-id-5765657.html" target="_blank" rel="noopener">http://blog.chinaunix.net/uid-21335514-id-5765657.html</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Tar_(computing)" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Tar_(computing)</a></li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/31/Linuxkit 中的 kernel+initrd 镜像启动过程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/31/Linuxkit 中的 kernel+initrd 镜像启动过程/" itemprop="url">Linuxkit 中的 kernel+initrd 镜像启动过程</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-31T08:16:04+08:00">
+                2017-05-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linuxkit 中有一种镜像输出方式是 kernel+initird，以这类镜像为例，我们就来谈谈一个可运行的操作系统启动过程“发展史”：</p>
+<ol>
+<li><p>开机，主板上电 CPU Reset，寄存器初始化，根据 CS、IP 寄存器（FFFF0h） 运行第一条指令地址，由于处于内存高位地址，所以一般是一个简单的跳转指令（JMP），找到对应的BIOS 程序</p>
+</li>
+<li><p>启动 BIOS 进行 POST 自检 （内存等硬件自检），然后 BIOS 会查找可引导的设备，找到后也就是对应的引导扇区 MBR，加载内存中，然后执行</p>
+</li>
+</ol>
+<p>引导扇区比较小，只有 512 字节，所以肯定无法完成后续的操作系统加载初始化的所有工作，所以这里就包含了一些关键信息：如何继续启动过程和装载 OS 的一些信息，也就是包含分区表，Boot Code（查看哪个分区是 Active）Boot code 执行后就会把控制权交给对应 Active 分区的 boot 部分</p>
+<ol start="3">
+<li>接下来就是 Bootloader（比如 GRUB） 部分，装载 kernel 和 initrd</li>
+</ol>
+<p>initrd 就是 Ram Disk，可以被 kernel 解压使用，用来作为临时的 root 文件系统，直到真正的 root 文件系统被挂载。<br>initrd 主要包含了可以挂载真正 root 文件系统的程序和一 些必要的驱动</p>
+<p>kernel 和 initrd 配合完成上面的，就开始将控制权交给 /sbin/init (对于 initramfs 则是 /init)，/sbin/init 主要会加载所有对应的 service 和用户空间的工具（配置的内容在 /etc/inittab 文件中），挂载对应 /etc/fstab 下的分区</p>
+<ol start="4">
+<li>用户进入登录界面</li>
+</ol>
+<p>特别说明，关于 initrd 和 initramfs 区别，在于<br>initrd 和 initramfs 都是作为根文件系统被挂载前的临时文件系统，被内核调用</p>
+<p>区别是：(更详细参考文献 12)<br>initrd 是 linux kernel 2.6 前引入的， 是一个 gzip 压缩的文件系统类型的镜像，需要内核中相应的模块编译才能完成对应的加载（比如loop 设备）<br>initramfs 是 linux kernel 2.6 引入的，一个 gzip 压缩的 cpio 归档，是一个内存盘，不依赖于底层的文件系统</p>
+<p>Image type    Location of init    Tool used to build the image<br>initramfs    /init    cpio -H newc -o<br>initrd    /sbin/init    mkcramfs, genext2fs (and others)</p>
+<p>具体查看对应镜像中的内容如下：</p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">initrd： </span><br><span class="line"><span class="comment"># mkdir /tmp/initrd</span></span><br><span class="line"><span class="comment"># cp initrd.img /tmp/initrd</span></span><br><span class="line"><span class="comment"># gunzip &lt; /tmp/initrd/initrd.img</span></span><br><span class="line"><span class="comment"># mkdir /mnt/initrd</span></span><br><span class="line"><span class="comment"># mount –ro loop /tmp/initrd/initrd /mnt/initrd</span></span><br><span class="line"><span class="comment"># cd /mnt/initrd</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">initramfs：</span><br><span class="line"><span class="comment"># gunzip -c /boot/initrd-2.6.31.img &gt; /tmp/my_initrd</span></span><br><span class="line"><span class="comment"># cpio -it &lt; /tmp/my_initrd         [examine contents]</span></span><br><span class="line"> <span class="class"><span class="keyword">lib</span></span></span><br><span class="line"> <span class="class"><span class="keyword">lib</span>/<span class="title">udev</span></span></span><br><span class="line"> <span class="class"><span class="keyword">lib</span>/<span class="title">udev</span>/<span class="title">console_init</span></span></span><br><span class="line"> <span class="class"><span class="keyword">lib</span>/<span class="title">firmware</span></span></span><br><span class="line"> <span class="class"><span class="keyword">lib</span>/<span class="title">firmware</span>/<span class="title">radeon</span></span></span><br><span class="line"> <span class="class"><span class="keyword">lib</span>/<span class="title">firmware</span>/<span class="title">radeon</span>/<span class="title">RV730_me</span>.<span class="title">bin</span></span></span><br><span class="line"> ... snip ...</span><br><span class="line"> <span class="class"><span class="keyword">lib</span>/<span class="title">modules</span></span></span><br><span class="line"> <span class="class"><span class="keyword">lib</span>/<span class="title">modules</span>/2.6.31</span></span><br><span class="line"> <span class="class"><span class="keyword">lib</span>/<span class="title">modules</span>/2.6.31/<span class="title">radeon</span>.<span class="title">ko</span></span></span><br><span class="line"> <span class="class"><span class="keyword">lib</span>/<span class="title">modules</span>/2.6.31/<span class="title">modules</span>.<span class="title">isapnpmap</span></span></span><br><span class="line"> ... and so on and so on ...</span><br><span class="line"><span class="comment"># cd [somewhere]                    [in preparation for unloading]</span></span><br><span class="line"><span class="comment"># cpio -i &lt; /tmp/my_initrd          [unload]</span></span><br></pre></td></tr></table></figure>
+<p>参考：</p>
+<p>[1] <a href="http://flint.cs.yale.edu/feng/cos/resources/BIOS/" target="_blank" rel="noopener">http://flint.cs.yale.edu/feng/cos/resources/BIOS/</a><br>[2] <a href="https://www.bbsmax.com/A/pRdBnwg9dn/" target="_blank" rel="noopener">https://www.bbsmax.com/A/pRdBnwg9dn/</a><br>[3] <a href="http://www.dewassoc.com/kbase/hard_drives/master_boot_record.htm" target="_blank" rel="noopener">http://www.dewassoc.com/kbase/hard_drives/master_boot_record.htm</a><br>[4] <a href="https://www.pks.mpg.de/~mueller/docs/suse10.1/suselinux-manual_en/manual/cha.boot.html" target="_blank" rel="noopener">https://www.pks.mpg.de/~mueller/docs/suse10.1/suselinux-manual_en/manual/cha.boot.html</a><br>[5] <a href="https://www.novell.com/documentation/suse91/suselinux-adminguide/html/ch12s03.html" target="_blank" rel="noopener">https://www.novell.com/documentation/suse91/suselinux-adminguide/html/ch12s03.html</a><br>[6] <a href="https://www.kernel.org/doc/html/v4.10/admin-guide/initrd.html" target="_blank" rel="noopener">https://www.kernel.org/doc/html/v4.10/admin-guide/initrd.html</a><br>[7] <a href="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/5/html/Installation_Guide/ch-boot-init-shutdown.html" target="_blank" rel="noopener">https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/5/html/Installation_Guide/ch-boot-init-shutdown.html</a><br>[8] <a href="https://en.wikipedia.org/wiki/Initrd" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Initrd</a><br>[9] <a href="https://en.wikipedia.org/wiki/Linux_startup_process" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Linux_startup_process</a><br>[10] <a href="http://www.thegeekstuff.com/2011/02/Linux-boot-process/" target="_blank" rel="noopener">http://www.thegeekstuff.com/2011/02/Linux-boot-process/</a><br>[11] <a href="http://www.aclevername.com/articles/linux-xilinx-tutorial/minimalist-initramfs.html" target="_blank" rel="noopener">http://www.aclevername.com/articles/linux-xilinx-tutorial/minimalist-initramfs.html</a><br>[12] <a href="https://www.kernel.org/doc/Documentation/filesystems/ramfs-rootfs-initramfs.txt" target="_blank" rel="noopener">https://www.kernel.org/doc/Documentation/filesystems/ramfs-rootfs-initramfs.txt</a><br>[13] <a href="https://www.zhihu.com/question/22364502" target="_blank" rel="noopener">https://www.zhihu.com/question/22364502</a><br>[14] <a href="https://www.linux.com/learn/kernel-newbie-corner-initrd-and-initramfs-whats" target="_blank" rel="noopener">https://www.linux.com/learn/kernel-newbie-corner-initrd-and-initramfs-whats</a><br>[15] <a href="http://www.aclevername.com/articles/linux-xilinx-tutorial/minimalist-initramfs.html" target="_blank" rel="noopener">http://www.aclevername.com/articles/linux-xilinx-tutorial/minimalist-initramfs.html</a><br>[16] <a href="https://zh.wikipedia.org/wiki/Initrd" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/Initrd</a><br>[17] <a href="https://ksearch.wordpress.com/2010/09/30/extract-contents-of-initrd/" target="_blank" rel="noopener">https://ksearch.wordpress.com/2010/09/30/extract-contents-of-initrd/</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/27/一篇很好的 Linux EXT 文件系统入门介绍的文章/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/27/一篇很好的 Linux EXT 文件系统入门介绍的文章/" itemprop="url">一篇很好的 Linux EXT 文件系统入门介绍的文章</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-27T08:46:34+08:00">
+                2017-05-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>一个国外的技术专家写的文章，介绍了 EXT 文件系统演进的历史，以及文件系统的基础知识，绝对值得一读</p>
+<p><a href="https://opensource.com/article/17/5/introduction-ext4-filesystem" target="_blank" rel="noopener">https://opensource.com/article/17/5/introduction-ext4-filesystem</a>                                   </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/25/编译 QEMU 报错 possibly undefined AC_PROG_LIBTOOL/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/25/编译 QEMU 报错 possibly undefined AC_PROG_LIBTOOL/" itemprop="url">编译 QEMU 报错 configure.ac:14: error: possibly undefined macro: AC_PROG_LIBTOOL</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-25T13:36:04+08:00">
+                2017-05-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在 CentOS 7.2 上编译最新的 QEMU 2.9.0 版本的时候，发现除了常规的</p>
+<figure class="highlight brainfuck"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">yum</span> <span class="comment">install</span> <span class="comment">gcc</span> <span class="comment">gcc</span><span class="literal">-</span><span class="comment">c</span><span class="literal">+</span><span class="literal">+</span>  <span class="comment">zlib</span><span class="literal">-</span><span class="comment">devel</span> <span class="comment">glibc</span><span class="literal">-</span><span class="comment">devel</span> <span class="comment">automake</span> <span class="comment">autoconf</span></span><br></pre></td></tr></table></figure>
+<p>依赖包，还会报另外一个错误</p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">configure.<span class="symbol">ac:</span><span class="number">14</span>: <span class="symbol">error:</span> possibly undefined <span class="function"><span class="keyword">macro</span>: <span class="title">AC_PROG_LIBTOOL</span></span></span><br><span class="line">      If this token and others are legitimate, please use m4_pattern_allow.</span><br><span class="line">      See the Autoconf documentation.</span><br></pre></td></tr></table></figure>
+<p>这个错误可以安装如下的包来解决：</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> libtool</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/24/CNI 项目被接纳托管到 CNCF，推动云原生应用的网络模型演进/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/24/CNI 项目被接纳托管到 CNCF，推动云原生应用的网络模型演进/" itemprop="url">CNI 项目被接纳托管到 CNCF，推动云原生应用的网络模型演进</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-24T08:24:32+08:00">
+                2017-05-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>今天 CNCF 又迎来了一位重要网络项目成员——CNI，这也是放在 CNCF 托管的第10个项目</p>
+<p>CNI 是一个关于容器网络接口标准的项目，由 CoreOS 发起，Redhat OpenShift, Apache Mesos, Cloud Foundry, Kubernetes, Kurma 和 rkt 公司创立。<br>CNI 定义了一套通用接口，接口面向网络插件和容器运行环境，CNI 定义的接口也是最小化，主要关注：容器的网络连通性和容器移除的时候的相关网络资源释放。</p>
+<p>CNI 主要包含了三大组件 （参考下图）</p>
+<ol>
+<li>CNI Specification： 定义了容器运行时和网络插件之间的API，实现容器网络的建立和销毁</li>
+<li>Plugins：支持不同网络技术和方案的扩展性手段</li>
+<li>Library：提供了 CNI Specification 一种 Go 实现，容器运行时可以很容易的使用 CNI</li>
+</ol>
+<p>当然 CNI 还很年轻，还需要根据容器领域的发展很好的进一步调整和适配，保证容器运行可以很便利稳定的消费 CNI， 为整个容器系统构建稳定网络环境</p>
+<p>参考：</p>
+<p><a href="https://www.cncf.io/category/blog/" target="_blank" rel="noopener">https://www.cncf.io/category/blog/</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/23/Web 开发值得注意的 12 个安全原则/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/23/Web 开发值得注意的 12 个安全原则/" itemprop="url">Web 开发值得注意的 12 个安全原则</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-23T08:13:27+08:00">
+                2017-05-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>下面的这篇文章值得读一下，结合云计算开发中一些特点，将相应的安全问题分类做了一些总结：</p>
+<p><a href="https://simplesecurity.sensedeep.com/web-developer-security-checklist-f2e4f43c9c56" target="_blank" rel="noopener">https://simplesecurity.sensedeep.com/web-developer-security-checklist-f2e4f43c9c56</a>.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/19/Linuxkit 快速 build VM 镜像/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/19/Linuxkit 快速 build VM 镜像/" itemprop="url">Linuxkit 快速 build VM 镜像</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-19T07:50:49+08:00">
+                2017-05-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Linuxkit 是什么？ 这个我原来这博文【1】中大概介绍过，今天再重新说一下，其实 Linuxkit 就是一个强大的工具集，这个工具集可以定制化基于容器的操作系统，这些镜像可以部署到现有的一些云平台上，因为本身支持很多的镜像格式 kernel+initrd，qcow2 等。</p>
+<p>废话不多说，我们演示一下如何 build 一个镜像，拿 docker 为例</p>
+<p>1&gt; $ git clone <a href="https://github.com/linuxkit/linuxkit.git" target="_blank" rel="noopener">https://github.com/linuxkit/linuxkit.git</a><br>2&gt; $ cd linuxkit<br>运行 make 命令</p>
+<p>一会就 build 完成对应的工具，包括 linuxkit，moby，rtf</p>
+<p>linuxkit 命令主要用于和 cloud 或者本地 hypervisor 交互的： push 镜像，部署镜像<br>moby 用于 build VM 镜像的<br>rtf 社区开发中运行集成测试的</p>
+<p>3&gt; 使用上面的工具开始 build 镜像</p>
+<p>$ cd examples<br>$ moby build docker<br>默认生成 kernel+initrd 镜像，还有对应的启动参数</p>
+<figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-rw-r--r--<span class="number"> 1 </span>root root<span class="number"> 71622481 </span>May<span class="number"> 17 </span>11:42 docker-initrd.img</span><br><span class="line">-rw-r--r--<span class="number"> 1 </span>root root <span class="number"> 7541328 </span>May<span class="number"> 17 </span>11:42 docker-kernel</span><br><span class="line">-rw-r--r--<span class="number"> 1 </span>root root      <span class="number"> 40 </span>May<span class="number"> 17 </span>11:42 docker-cmdline</span><br></pre></td></tr></table></figure>
+<p>$ 运行 docker 镜像</p>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ linuxkit <span class="keyword">run</span><span class="bash"> docker</span></span><br></pre></td></tr></table></figure>
+<p>注意这里运行的时候，依赖一些可支持的平台，如下：</p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Supported backends are (<span class="keyword">default</span> <span class="keyword">platform</span> <span class="keyword">in</span> brackets):</span><br><span class="line">  gcp</span><br><span class="line">  hyperkit [macOS]</span><br><span class="line">  qemu [linux]</span><br><span class="line">  vmware</span><br><span class="line">  packet</span><br></pre></td></tr></table></figure>
+<p>本文一台 CentOS 机器，装了相关的 QEMU 相关的软件，否则会出现不能运行，或者进入VM 后，出现乱码的状况</p>
+<p>最后有如下的画面</p>
+<figure class="highlight julia"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">[   <span class="number">12.764709</span>] tsc: Refined TSC clocksource calibration: <span class="number">2294.665</span> MHz</span><br><span class="line">[   <span class="number">12.764991</span>] clocksource: tsc: mask: <span class="number">0xffffffffffffffff</span> max_cycles: <span class="number">0x2113854cd53</span>, max_idle_ns: <span class="number">440795215552</span> ns</span><br><span class="line">[   <span class="number">12.773755</span>] Freeing unused kernel memory: <span class="number">820</span>K (ffff8ba191933000 - ffff8ba191a00000)</span><br><span class="line">[   <span class="number">12.823433</span>] Freeing unused kernel memory: <span class="number">1012</span>K (ffff8ba191d03000 - ffff8ba191e00000)</span><br><span class="line">[   <span class="number">13.782833</span>] clocksource: Switched to clocksource tsc</span><br><span class="line"></span><br><span class="line">Welcome to LinuxKit</span><br><span class="line"></span><br><span class="line">                        <span class="comment">##         .</span></span><br><span class="line">                  <span class="comment">## ## ##        ==</span></span><br><span class="line">               <span class="comment">## ## ## ## ##    ===</span></span><br><span class="line">           /<span class="string">""""""</span><span class="string">""""""</span><span class="string">"""""\___/ ===</span></span><br><span class="line"><span class="string">      ~~~ &#123;~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~</span></span><br><span class="line"><span class="string">           \______ o           __/</span></span><br><span class="line"><span class="string">             \    \         __/</span></span><br><span class="line"><span class="string">              \____\_______/</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">/ #</span></span><br></pre></td></tr></table></figure>
+<p>执行 runc list 查看</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/ <span class="comment"># runc list</span></span><br><span class="line">ID          PID         STATUS      BUNDLE                         CREATED                          OWNER</span><br><span class="line">dhcpcd      <span class="number">607</span>         <span class="built_in">running</span>     /<span class="built_in">run</span>/containerd/linux/dhcpcd   <span class="number">2017</span><span class="number">-05</span><span class="number">-18</span>T10:<span class="number">36</span>:<span class="number">44.584310687</span>Z   root</span><br><span class="line">docker      <span class="number">639</span>         <span class="built_in">running</span>     /<span class="built_in">run</span>/containerd/linux/docker   <span class="number">2017</span><span class="number">-05</span><span class="number">-18</span>T10:<span class="number">36</span>:<span class="number">47.003939228</span>Z   root</span><br><span class="line">ntpd        <span class="number">668</span>         <span class="built_in">running</span>     /<span class="built_in">run</span>/containerd/linux/ntpd     <span class="number">2017</span><span class="number">-05</span><span class="number">-18</span>T10:<span class="number">36</span>:<span class="number">48.825102369</span>Z   root</span><br></pre></td></tr></table></figure>
+<p>进入 docker 容器，</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/ <span class="comment"># runc exec -t docker sh</span></span><br><span class="line">/ <span class="comment"># docker ps</span></span><br><span class="line">CONTAINER ID        IMAGE               <span class="keyword">COMMAND</span>             CREATED             STATUS              PORTS               NAMES</span><br><span class="line">/ <span class="comment">#</span></span><br></pre></td></tr></table></figure>
+<p>这样一个 VM 中的容器中运行的 docker 进程就 OK 了，也很简单</p>
+<p>当然了社区这个工具开发相对时间不长，所以有些调试或者使用易用性上还有很多要做的工作</p>
+<p>参考文献：</p>
+<ol>
+<li><a href="http://blog.chinaunix.net/uid-21335514-id-5763176.html" target="_blank" rel="noopener">http://blog.chinaunix.net/uid-21335514-id-5763176.html</a></li>
+<li><a href="https://github.com/linuxkit/linuxkit" target="_blank" rel="noopener">https://github.com/linuxkit/linuxkit</a></li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/14/HTTP-2 的简单介绍和理解/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/14/HTTP-2 的简单介绍和理解/" itemprop="url">HTTP-2 的简单介绍和理解</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-14T22:16:39+08:00">
+                2017-05-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>演进时间点<br>HTTP 发明(1989 Tim Berers-Lee) –&gt; HTTP 1.0 (1996)  –&gt; HTTP 1.1 (1999) –&gt; HTTP/2 (2015)</p>
+<p>HTTP 1.0  中的问题：<br>每次请求都是一次独立的 TCP （3次握手）连接建立和关闭的过程；<br>HOL （Head-of-line blocking）如果由于前面的请求不能及时处理，后续请求需要被阻塞直到前面的请求处理完毕才能继续发送。</p>
+<p>HTTP 1.1 相比 1.0  改进了包括：<br>持久化连接，重用了 TCP 连接，减少不必要的资源的建立和释放过程。<br>Pipeline 机制：多个请求可以同时发送，但是服务端仍然要按序一个个返回，所以仍然有一定程度的(HOL)， 各个浏览器对于这个特性不太感冒，很多禁掉或者没有实现这个Pipeline 机制</p>
+<p>除了上述主要修改，还涵盖Cache，扩展性（引入的比如路径追踪的头部和OPTIONS 方法），带宽利用（断点续传，部分资源请求，压缩），网络连接管理（持久化，Pilelining），消息传递（分块传输，编码方式指定），网络地址维护，错误通知的管理（新的状态码和警告头部），安全和完整性</p>
+<p>为了有效利用带宽和提高Web 服务性能，采用了一些技术</p>
+<p>拼接技术： 多个 js 文件整合一个，减少请求次数，但是也造成杀鸡牛刀的影响（小改动大数据的重新下载）</p>
+<p>嵌入内联 （将一些图片原始数据嵌入 css 中，也是减少请求次数，缓存无法有效利用，无法页面共享）</p>
+<p>Sprite 技术 （将很多小图拼接大图，然后使用js和css 等重新切割出来的小图，维护开发相对复杂）</p>
+<p>Sharding 技术（浏览器限制某一个域最多有 5（不同浏览器有些小的差别）连接，所以有些网站为了提高性能，使用新的主机名，提高同时连接的数目，实现资源请求的效率的提升）</p>
+<p>HTTP/2 登场<br>HTTP 1.1 虽然较 1.0 改进了了很多，但是在如今随着网页的越来越复杂丰富，移动网络的兴起（相比传统的有线稳定的网络），如今的带宽往往处理这些越来越力不从心，所以演进了 HTTP/2 (基于 Google SPDY)</p>
+<p>HTTP/2 有如下特点：</p>
+<p>二进制的协议（相比原来的文本方式，解析处理更加容易）</p>
+<p>采用多路复用（共享连接上双方可以同时发送请求和响应，这样原来 HTTP/1.1 的中一些技术比如sharding，嵌入内联，Spriting 就没有必要了）</p>
+<p>每个流可以设置优先级和依赖关系  （服务器或者客户端对于并行发送的这些独立的帧的设置，可以控制资源的获取先后顺序）</p>
+<p>服务器推送 （服务器主动将资源推送给客户端，减少客户端额外请求的延迟）</p>
+<p>头部压缩 （HPACK 压缩格式，主要是静态Huffman 对头部字段编码 ，并且客户端和服务端同时维护，更新这些头部字段的索引列表）</p>
+<p>流量控制 （服务器和客户端可以实现自己的数据流流量控制，更加接近应用级别的流控）</p>
+<p>HTTP/2 的支持</p>
+<p>现在基本所有大型浏览器对提供了对于 HTTP/2 的支持，包括Firefox， Chrome 等。 （HTTP/2本身并不强制使用TLS，但是一些浏览器要求使用HTTP/2 必须使用 TLS） ,一些主要的Web 服务器也提供了支持，比如Nginx，Apache 等。</p>
+<p>部署 HTTP/2 需要客户端和服务器同时支持，如果对于普通的Web 程序，浏览器支持就够了。</p>
+<p>HTTP/2 性能比较一个例子</p>
+<p>通过<a href="https://imagekit.io/demo/http2-vs-http1" target="_blank" rel="noopener">https://imagekit.io/demo/http2-vs-http1</a> 这个例子，我们开启 Chrome 中的protocol 显示，发现 HTTP/2 的请求几乎是同时，然后完成加载</p>
+<p>而 HTTP/1.1 同一时间是大约是5~6 个并发请求，所以对于这种100 个小图拼接的图像，HTTP/2 完败 HTTP/1.1</p>
+<p>以上只是简单的总结，更加深入的介绍还需要对于 HTTP/2 规范等细致的通读一下。</p>
+<p><a href="https://www.w3.org/Protocols/HTTP/1.0/spec.html" target="_blank" rel="noopener">https://www.w3.org/Protocols/HTTP/1.0/spec.html</a><br><a href="https://www.w3.org/Protocols/History.html" target="_blank" rel="noopener">https://www.w3.org/Protocols/History.html</a><br><a href="http://www8.org/w8-papers/5c-protocols/key/key.html" target="_blank" rel="noopener">http://www8.org/w8-papers/5c-protocols/key/key.html</a><br><a href="https://bagder.gitbooks.io/http2-explained/content/zh/part3.html" target="_blank" rel="noopener">https://bagder.gitbooks.io/http2-explained/content/zh/part3.html</a><br><a href="https://developers.google.com/web/fundamentals/performance/http2/" target="_blank" rel="noopener">https://developers.google.com/web/fundamentals/performance/http2/</a><br><a href="https://linjunzhu.github.io/blog/2016/03/10/http2-zongjie/" target="_blank" rel="noopener">https://linjunzhu.github.io/blog/2016/03/10/http2-zongjie/</a><br><a href="http://www.jianshu.com/p/52d86558ca57" target="_blank" rel="noopener">http://www.jianshu.com/p/52d86558ca57</a><br><a href="https://imququ.com/post/header-compression-in-http2.html" target="_blank" rel="noopener">https://imququ.com/post/header-compression-in-http2.html</a><br><a href="http://if-true.com/2015/04/27/tech-difference-between-http-1.1-2.0.html" target="_blank" rel="noopener">http://if-true.com/2015/04/27/tech-difference-between-http-1.1-2.0.html</a><br><a href="https://blog.imagekit.io/still-not-using-http-2-327d56397b58" target="_blank" rel="noopener">https://blog.imagekit.io/still-not-using-http-2-327d56397b58</a><br><a href="https://tools.ietf.org/html/rfc7540" target="_blank" rel="noopener">https://tools.ietf.org/html/rfc7540</a><br><a href="https://en.wikipedia.org/wiki/Head-of-line_blocking" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Head-of-line_blocking</a><br><a href="https://en.wikipedia.org/wiki/HTTP_pipelining" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/HTTP_pipelining</a><br><a href="http://www.cnblogs.com/xiaohuochai/p/6159326.html" target="_blank" rel="noopener">http://www.cnblogs.com/xiaohuochai/p/6159326.html</a><br><a href="https://imagekit.io/demo/http2-vs-http1" target="_blank" rel="noopener">https://imagekit.io/demo/http2-vs-http1</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/26/">26</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Kai Qiang Wu</p>
+              <p class="site-description motion-element" itemprop="description">This is a place for thinking and writing</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">252</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/HackToday" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Kai Qiang Wu</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+        
+<div class="busuanzi-count">
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> Visitor
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> Total Visit
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
