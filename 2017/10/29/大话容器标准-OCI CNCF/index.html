@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-cn,en,default">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="云计算,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="这是以前写的文章，一直没有分享出来，一方面觉得业界还在不停的变化，另一方面还在忙别的事情，随着前些日子，docker 官方原生支持 Kubernetes 的部署，我觉得回过头来看看以前自己写的这篇文章还是很有意思的事情。 OCI 2015年6月建议，发起者主要是 docker 公司还有容器行业的其他的公司。最初主要是解决容器运行标准化的问题，后来扩展包括了对于容器镜像标准的问题的涵盖。 目前主要包">
+<meta name="keywords" content="云计算">
+<meta property="og:type" content="article">
+<meta property="og:title" content="大话容器标准-OCI CNCF">
+<meta property="og:url" content="http://yoursite.com/2017/10/29/大话容器标准-OCI CNCF/index.html">
+<meta property="og:site_name" content="HackToday Walk Blog">
+<meta property="og:description" content="这是以前写的文章，一直没有分享出来，一方面觉得业界还在不停的变化，另一方面还在忙别的事情，随着前些日子，docker 官方原生支持 Kubernetes 的部署，我觉得回过头来看看以前自己写的这篇文章还是很有意思的事情。 OCI 2015年6月建议，发起者主要是 docker 公司还有容器行业的其他的公司。最初主要是解决容器运行标准化的问题，后来扩展包括了对于容器镜像标准的问题的涵盖。 目前主要包">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2019-07-28T17:12:52.976Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大话容器标准-OCI CNCF">
+<meta name="twitter:description" content="这是以前写的文章，一直没有分享出来，一方面觉得业界还在不停的变化，另一方面还在忙别的事情，随着前些日子，docker 官方原生支持 Kubernetes 的部署，我觉得回过头来看看以前自己写的这篇文章还是很有意思的事情。 OCI 2015年6月建议，发起者主要是 docker 公司还有容器行业的其他的公司。最初主要是解决容器运行标准化的问题，后来扩展包括了对于容器镜像标准的问题的涵盖。 目前主要包">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/10/29/大话容器标准-OCI CNCF/">
+
+
+
+
+
+  <title>大话容器标准-OCI CNCF | HackToday Walk Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-cn">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">HackToday Walk Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/29/大话容器标准-OCI CNCF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">大话容器标准-OCI CNCF</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-29T14:22:37+08:00">
+                2017-10-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> View
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>这是以前写的文章，一直没有分享出来，一方面觉得业界还在不停的变化，另一方面还在忙别的事情，随着前些日子，docker 官方原生支持 Kubernetes 的部署，我觉得回过头来看看以前自己写的这篇文章还是很有意思的事情。</p>
+<p>OCI 2015年6月建议，发起者主要是 docker 公司还有容器行业的其他的公司。最初主要是解决容器运行标准化的问题，后来扩展包括了对于容器镜像标准的问题的涵盖。</p>
+<p>目前主要包含以下标准：<br><a href="http://www.github.com/opencontainers/runtime-spec" target="_blank" rel="noopener">http://www.github.com/opencontainers/runtime-spec</a><br><a href="http://www.github.com/opencontainers/image-spec" target="_blank" rel="noopener">http://www.github.com/opencontainers/image-spec</a></p>
+<p>主要的流程是，从镜像源下载 OCI 镜像，解压符合 OCI 运行时的文件系统 Bundle，然后由 OCI Runtime 运行（例如runc）<br>不难看出，上面 OCI的使命主要是解决底层容器运行相关容器打包标准化和运行环境规范，实现容器镜像的跨云，平台的即插即用。</p>
+<a id="more"></a>
+<p>第一章. 群雄逐鹿</p>
+<ul>
+<li>Containerd<br>docker 公司官方实现的符合 OCI 运行规范的实现是 runc，并且捐赠给 OCI 组织。</li>
+</ul>
+<p>对于 runc 这么底层的运行程序，显示对于更高一级管理（host级别，或者cluster 级别）是需要一定程度的抽象和封装，为此就有了所谓的 containerd和随着一套的工具集合，这些也是目前 docker 版本中被集成和实现了，具体的工具交互流程图如下：</p>
+<p>具体的内部架构图如下： </p>
+<p>用户或者外部系统通过 API ，来跟子系统进行交互，包括，镜像相关（distribution 拉取镜像，Bundle 提取和打包镜像），容器相关（bundle 的执行，来进行容器的创建运行）<br>对应下面的组件，包括：Executor（容器运行时的实现），Supervisor（容器状态的监控和上报），Metadata（镜像和bundle持久化引用的存储，存储到graph db中），Content（镜像RO部分），Snapshot（graphdriver 部分，对于容器镜像部分的管理），Events（事件支持），Metrics（指标）。</p>
+<p>程序内部流程图：</p>
+<ul>
+<li>Rkt</li>
+</ul>
+<p>Rkt 和 Docker 走的架构有些不同，走的是 daemon less，以pod为基础单位，下面的是 rkt 的一个架构图：</p>
+<p>stage0: 根据不同的触发方式，调用 rkt， 然后获取 ACL 镜像，生成 pod 相关的元数据，创建相关的文件系统，解压镜像到相关的目录。<br>stage1: 根据stage0产生的镜像和pod元数据，创建相应的隔离环境，（支持的flavor 有： fly,systemd,kvm）<br>stage2: 在 stage1的隔离环境中，调用对应的app 可执行程序</p>
+<p>相比 docker，这个本身不存在单点故障，rkt 本是主要接口是一个命令行工具，不需要类似 docker dameon 或者 containerd 类似的支撑。<br>不过 docker 从原来的 docker daemon 重构迁移到模块化结构的 containerd 方案后，通过 live-restore 是可以实现 docker daemonless 的<br>container，重启 docker daemon ，容器仍然保持运行。</p>
+<p>参看 coreos 网站给了一个 关于 rkt vs docker 比较，其实这两个现在不适合直接比较了，更应该是比较 rkt 和 containerd 之间的比较。</p>
+<p>不论是 containerd 和 rkt，都在其中对于 OCI 的支持列入到了自身的 Roadmap 中，具体分别是：<br><a href="https://github.com/containerd/containerd/blob/master/ROADMAP.md" target="_blank" rel="noopener">https://github.com/containerd/containerd/blob/master/ROADMAP.md</a><br><a href="https://github.com/rkt/rkt/blob/master/ROADMAP.md" target="_blank" rel="noopener">https://github.com/rkt/rkt/blob/master/ROADMAP.md</a></p>
+<p>值得一提的是，关于 rkt 是 CoreOS 主导的，CoreOS 公司有些融资是来自于谷歌风投的。<br>（想想rkt 现在努力支持k8s CRI， k8s 中使用的 etcd，天生的pod 适配，等待..）</p>
+<p>CNCF</p>
+<p>容器本身的特点，极大的促使新型的应用转交和发布，服务的动态关联和发现。一些互联网企业开始从传统的单体架构转向微服务架构，依次衍生出对于云原生应用的需求和技术，CNCF 就是在这种背景下产生，主要是目标是提供可使用的软件栈满足以下需求：提供服务容器化、动态编排、面向微服务的。</p>
+<p>说道这个 CNCF 就不得不说 google 和 kubernetes，这个基金会成立之初也是google 为了推广 kubernetes 生态的发展，kubernetes 作为容器管理系统，是一个面向企业级的偏重的全能型实现方案，几乎所有的容器服务的场景和融合方案（网络，存储，编排，AutoScale 等）都会涵盖。</p>
+<p>CNCF 基金会以面向可用系统级别为出发点，吸纳了其他衍生项目的加入，包括但不限于：</p>
+<p>CNCF 的摊子铺的可算比较大， </p>
+<p>除了 SDN， SDS， IaaS， OS， Container Runtime 之外。上面的部分，还有接口的支持和集成，都包括在内。</p>
+<p>第二章  部落联盟</p>
+<p>关于 OCI 和 CNCF 还有一个比较有趣的双方协定，</p>
+<p>OCI 中，说<br>How does OCI integrate with CNCF?<br>A container runtime is just one component of the cloud native technical architecture but the container runtime itself is out of initial scope of CNCF (as a CNCF project), see the charter Schedule A for more information. </p>
+<p>CNCF 这样说<br>For further discussion<br>The following are considered out of scope for now, but might need to be included later.</p>
+<pre><code>* Application environment. Crafting a well formed, minimal userland environment for cloud native applications.
+* OCI topics (container format and runtime). The goal is to integrate with the OCI group.
+</code></pre><p>虽然这里看到还是有井水河水之分，但是依据微妙的声明，可以看到还是会有融合的可能。<br>CNCF 的影响力不断增大，docker 官方也打算并且提交将containerd 捐献给CNCF， CoreOS 也是同样提交了 rkt 给 CNCF，希望将容器运行核心项目交由 CNCF 基金会维护，更加发展壮大。这可谓树大好乘凉。</p>
+<p>那我们看看containerd 和 rkt 在 未来的云原生系统中占据什么位置，如下：</p>
+<p>显然，无论是 docker 还是 rkt 都希望自身在未来的容器生态系统占据核心重要一环。<br>而且未来，docker 不满足 containerd 只是简单的容器运行和进程管理，他希望可以扩充更多的，涵盖distribution，storage，和networking，下面两张图对比来看：</p>
+<p>第三章 联盟求同存异</p>
+<p>CNCF 在 Berblin KubeCon 上宣布同时接受了 containerd and rkt 这两个 runtime 项目 作为 CNCF 孵化项目<br><a href="https://thenewstack.io/separate-votes-cncf-adopts-dockers-containerd-coreos-rkt/" target="_blank" rel="noopener">https://thenewstack.io/separate-votes-cncf-adopts-dockers-containerd-coreos-rkt/</a></p>
+<p>所以 CNCF 官方网站上就有了以下的有趣的成员图：</p>
+<p>第四章 生态之争</p>
+<p>每年的DockerCon 都会不甘寂寞，放出一些很酷的 feature 和声明，这次 DockerCon 2017 也不例外， Docker 公司做出来两个重要的宣布</p>
+<p>Docker 开源社区单独命名： Docker 成为公司商业产品的代名词，开源社区的运营以 Moby 为代名词，Moby 代表社区的围绕容器系统生态相关的各个组件，框架项目统称，基于这些开源化的组件，不同的系统集成或者公司都可以开发自身的容器管理集成系统，当然也包括 Docker 公司自己。Docker 公司本身的很多产品（比如Docker DataCenter）是基于这些组件搭建的，同时包含了一些特别的高级功能，这样 Docker 名字命名的改变，应该是公司自身一来明确的产品界限，二来希望基于自身的技术的开源生态系统更加更加丰富（看看人家 kubernetes 生态系统搞得大不大），这也是一场不确定的生态系统战争，双方胜负未定，至少对方都希望不要输的太早。</p>
+<p>参考资料： </p>
+<ol>
+<li><a href="https://www.opencontainers.org/" target="_blank" rel="noopener">https://www.opencontainers.org/</a></li>
+<li><a href="https://github.com/docker/containerd/blob/master/design/architecture.md" target="_blank" rel="noopener">https://github.com/docker/containerd/blob/master/design/architecture.md</a></li>
+<li><a href="https://coreos.com/rkt/docs/latest/devel/architecture.html" target="_blank" rel="noopener">https://coreos.com/rkt/docs/latest/devel/architecture.html</a></li>
+<li><a href="https://coreos.com/rkt/docs/latest/rkt-vs-other-projects.html#rkt-vs-runc" target="_blank" rel="noopener">https://coreos.com/rkt/docs/latest/rkt-vs-other-projects.html#rkt-vs-runc</a></li>
+<li><a href="https://www.cncf.io/about/charter/" target="_blank" rel="noopener">https://www.cncf.io/about/charter/</a></li>
+<li><a href="https://www.opencontainers.org/faq" target="_blank" rel="noopener">https://www.opencontainers.org/faq</a></li>
+<li><a href="https://containerd.io/" target="_blank" rel="noopener">https://containerd.io/</a></li>
+<li><a href="https://blog.docker.com/2017/03/docker-donates-containerd-to-cncf/" target="_blank" rel="noopener">https://blog.docker.com/2017/03/docker-donates-containerd-to-cncf/</a></li>
+<li><a href="https://coreos.com/blog/rkt-container-runtime-to-the-cncf.html" target="_blank" rel="noopener">https://coreos.com/blog/rkt-container-runtime-to-the-cncf.html</a></li>
+<li><a href="http://events.linuxfoundation.org/sites/events/files/slides/(OSF_Mr.%20Chris%20Aniszczyk)CNCF%20(OS%20Forum%20Japan%202016).pdf" target="_blank" rel="noopener">http://events.linuxfoundation.org/sites/events/files/slides/(OSF_Mr.%20Chris%20Aniszczyk)CNCF%20(OS%20Forum%20Japan%202016).pdf</a></li>
+<li><a href="https://github.com/moby/moby/pull/24970" target="_blank" rel="noopener">https://github.com/moby/moby/pull/24970</a></li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/云计算/" rel="tag"># 云计算</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/25/相同的 pip 命令 --trusted-host 错误消息不一致/" rel="next" title="相同的 pip 命令 --trusted-host 错误消息不一致">
+                <i class="fa fa-chevron-left"></i> 相同的 pip 命令 --trusted-host 错误消息不一致
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/11/29/解决 Nginx 502 Bad Gateway 问题/" rel="prev" title="解决 Nginx 502 Bad Gateway 问题">
+                解决 Nginx 502 Bad Gateway 问题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Kai Qiang Wu</p>
+              <p class="site-description motion-element" itemprop="description">This is a place for thinking and writing</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">253</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/HackToday" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Kai Qiang Wu</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+        
+<div class="busuanzi-count">
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> Visitor
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> Total Visit
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

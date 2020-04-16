@@ -274,6 +274,139 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2013/07/20/关于virtualbox的 4.2.0的一个问题（guest os redhat 6.4)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2013/07/20/关于virtualbox的 4.2.0的一个问题（guest os redhat 6.4)/" itemprop="url">关于virtualbox的 4.2.0的一个问题（guest os redhat 6.4)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2013-07-20T12:21:45+08:00">
+                2013-07-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>问题：<br>如果你使用virtualbox 4.2.0会发现一个问题，安装完redhat 6.4操作系统后，安装增强功能时，无法正常的编译，</p>
+<figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">error: </span>unknown field ‘reclaim_buffers’ specified in initializer</span><br></pre></td></tr></table></figure>
+<p>这个是virtualbox的一个bug，参看</p>
+<p><a href="https://www.virtualbox.org/ticket/11586" target="_blank" rel="noopener">https://www.virtualbox.org/ticket/11586</a></p>
+<p>解决方法：</p>
+<p>link中提到了，修改</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi <span class="regexp">/usr/</span>src<span class="regexp">/vboxguest-4.2.0/</span>vboxvideo<span class="regexp">/vboxvideo_drm.c</span></span><br></pre></td></tr></table></figure>
+<p>如下</p>
+<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">109 </span>#<span class="keyword">if</span> LINUX_VERSION_CODE &lt; KERNEL_VERSION(<span class="number">3</span>, <span class="number">6</span>, <span class="number">0</span>)</span><br><span class="line"><span class="symbol">110 </span>    // .reclaim_buffers = drm_core_reclaim_buffers,</span><br><span class="line"><span class="symbol">111 </span>#endif</span><br></pre></td></tr></table></figure>
+<p>然后，运行</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/vboxadd <span class="built_in">setup</span></span><br></pre></td></tr></table></figure>
+<p>这样就可以正常的编译了。你不可以运行那个install脚本，因为那样会把修改的再次用原始的代码覆盖，编译还是会失败。</p>
+<p>其他问题：</p>
+<p>好像这个版本的增强功能，还有其他问题，编译成功也无法使用无缝模式的。<br>估计这个版本没有对redhat 6.4测试过或者不正式支持，无从得知。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2013/07/20/创建ISO映像解决问题/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1429,144 +1562,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2013/04/01/JVM default locale的问题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Kai Qiang Wu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HackToday Walk Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2013/04/01/JVM default locale的问题/" itemprop="url">JVM default locale的问题</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2013-04-01T21:26:25+08:00">
-                2013-04-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>前几天调试一个问题，搜集了一些关于JVM locale资料介绍，总结如下：</p>
-<ol>
-<li>Windows 7</li>
-</ol>
-<p>Before Java 7<br>对于java 7之前的JVM的default locale和操作系统format的设置相关，<br>具体配置在，控制面板–》地区和语言–》Formats</p>
-<p>Java 7<br>java7 采用根据windows 7中的display language<br>具体配置在，控制面板–》地区和语言–》keyboards and language<br>一般的系统如果没装Language Interface Pack，这个不会显示。具体可以点击里面的 How do I get additional display languages?<br>参看微软的说明</p>
-<ol start="2">
-<li>Linux的配置，</li>
-</ol>
-<p>简单，分为永久设置 和 登录会话临时设置，</p>
-<p>vi /etc/sysconfig/i18n 修改如下</p>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">LANG</span>=<span class="string">"zh_CN.UTF-8"</span></span><br></pre></td></tr></table></figure>
-<p>临时，<code>export LANG=zh_CN.UTF-8</code></p>
-<ol start="3">
-<li>怎么确认JVM的default locale，</li>
-</ol>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"><span class="meta-keyword">import</span> java.util.Locale;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LocaleTest</span> </span>&#123;</span><br><span class="line">   <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(String[] args) &#123;</span><br><span class="line">      System.out.println(Locale.getDefault());</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>参考资料:</p>
-<p><a href="http://stefanhendriks.wordpress.com/2012/02/" target="_blank" rel="noopener">http://stefanhendriks.wordpress.com/2012/02/</a><br><a href="http://stackoverflow.com/questions/7107972/java-7-default-locale" target="_blank" rel="noopener">http://stackoverflow.com/questions/7107972/java-7-default-locale</a><br><a href="http://stackoverflow.com/questions/10707238/locale-getdefault-returns-en-always" target="_blank" rel="noopener">http://stackoverflow.com/questions/10707238/locale-getdefault-returns-en-always</a><br><a href="http://blog.ej-technologies.com/2011/12/default-locale-changes-in-java-7.html" target="_blank" rel="noopener">http://blog.ej-technologies.com/2011/12/default-locale-changes-in-java-7.html</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1617,7 +1612,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">252</span>
+                  <span class="site-state-item-count">253</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1630,7 +1625,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">32</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -1677,7 +1672,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

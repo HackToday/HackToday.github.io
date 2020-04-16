@@ -274,6 +274,146 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/12/01/搭建proxy server的尝试/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/12/01/搭建proxy server的尝试/" itemprop="url">搭建proxy server的尝试</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-12-01T23:08:59+08:00">
+                2015-12-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在ubuntu下搭建一个代理服务器比较简单，ubuntu下有个squid3用的比较广泛，简单的几个步骤可以搞定。 具体实践如下:</p>
+<ol>
+<li>安装</li>
+</ol>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="builtin-name">get</span> install squid3</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>配置</li>
+</ol>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo cp /etc/squid3/squid<span class="selector-class">.conf</span> /etc/squid3/squid<span class="selector-class">.conf</span><span class="selector-class">.original</span></span><br><span class="line">sudo chmod a-w /etc/squid3/squid<span class="selector-class">.conf</span><span class="selector-class">.original</span></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>sudo vim /etc/squid3/squid.conf</li>
+</ol>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">acl</span> src </span><br><span class="line"></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># INSERT YOUR OWN RULE(S) HERE TO ALLOW ACCESS FROM YOUR CLIENTS</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line">http_access allow</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>sudo service squid3 restart</li>
+</ol>
+<p>如果启动了ufw，需要保证对应的proxy端口打开。比如你的squid设置的</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Squid normally listens to port <span class="number">8888</span></span><br><span class="line">http_port <span class="number">8888</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo ufw allow <span class="number">8888</span>/tcp</span><br><span class="line"></span><br><span class="line">sudo ufw <span class="keyword">status</span></span><br></pre></td></tr></table></figure>
+<p>参考资料：</p>
+<p><a href="https://help.ubuntu.com/lts/serverguide/squid.html" target="_blank" rel="noopener">https://help.ubuntu.com/lts/serverguide/squid.html</a><br><a href="http://www.tecmint.com/install-squid-in-ubuntu/" target="_blank" rel="noopener">http://www.tecmint.com/install-squid-in-ubuntu/</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/12/01/借助方便的autocutsel完成windows7和Linux之间copy-paste/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1473,132 +1613,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/07/24/NTP- no server suitable for synchronization found/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Kai Qiang Wu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HackToday Walk Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/07/24/NTP- no server suitable for synchronization found/" itemprop="url">NTP: no server suitable for synchronization found</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-07-24T11:35:25+08:00">
-                2015-07-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Ntp Server 在Redhat 7配置后，发现client</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ntpdate -u <span class="tag">&lt;<span class="name">serverip</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>报错： no server suitable for synchronization found</p>
-<p>检查排错后，原来是firewall的问题，</p>
-<p>在NTP server 配置防火墙</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">iptables -I INPUT -<span class="selector-tag">p</span> udp --dport <span class="number">123</span> -j ACCEPT</span><br><span class="line">iptables -I OUTPUT -<span class="selector-tag">p</span> udp --sport <span class="number">123</span> -j ACCEPT</span><br></pre></td></tr></table></figure>
-<p>这样就可以了，注意-I, 不是-A<br>确保你的CHAIN最后一条不是Reject，因为-A是在最后添加一条新的规则。                                   </p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1649,7 +1663,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">252</span>
+                  <span class="site-state-item-count">253</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1662,7 +1676,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">32</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -1709,7 +1723,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

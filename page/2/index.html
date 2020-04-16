@@ -274,6 +274,130 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/25/无服务器 - Serverless 入门知识/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/25/无服务器 - Serverless 入门知识/" itemprop="url">无服务器 - Serverless 入门知识</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-25T13:02:19+08:00">
+                2018-02-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>Serverless 这个单词最早大约来源于Ken Form 的一篇文章中， 不过并不是今天我们要讨论的这个意思，如今的含义是无服务器，主要是指让开发人员专注于业务代码的本身逻辑上，无需关注代码部署的资源、维护、扩展性和高可用性，减少代码开发人员的业务无关的工作量，提高开发效率，具有无状态运行，基于事件触发，按需付费，运维完全托管到第三方等特点。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/02/25/无服务器 - Serverless 入门知识/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/21/故障分析平台 Sentry 的 LDAP 集成搭建/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1410,159 +1534,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/23/ChatterBot 智能机器人玩起来/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Kai Qiang Wu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HackToday Walk Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/23/ChatterBot 智能机器人玩起来/" itemprop="url">ChatterBot 智能机器人玩起来</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-23T18:12:10+08:00">
-                2017-07-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>机器学习作为一门技术已经被应用到很多场景中，从个性化推荐到智能数据商业分析等，举不胜举，今天我们看一个简单的小例子，智能会话机器人、</p>
-<p>所需技术： gunicorn，nginx，mongodb，mysql</p>
-<p>ChatterBot 是一个支持多种语言的机器人，通过基于历史会话进行机器学习，从而可以产生自动应答的效果。具体原理图如下：</p>
-<p>官方已经有一个 django 的应用例子，不过默认是使用的 sqlite db<br>改动： 我们使用了 mongodb，然后 django 应用对应的配置了 mysql，使用gunicorn （HTTP server）和 nginx （proxy server），</p>
-<p>具体如下：</p>
-<ol>
-<li>下载 django_app</li>
-</ol>
-<p><a href="https://github.com/gunthercox/ChatterBot/tree/master/examples/django_app" target="_blank" rel="noopener">https://github.com/gunthercox/ChatterBot/tree/master/examples/django_app</a></p>
-<ol start="2">
-<li>配置 mysql db</li>
-</ol>
-<p>配置 mysql：</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="builtin-name">get</span> update</span><br><span class="line">sudo apt-<span class="builtin-name">get</span> install mysql-server</span><br><span class="line">sudo mysql_secure_installation</span><br></pre></td></tr></table></figure>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">DATABASE</span> chattraindb <span class="built_in">CHARACTER</span> <span class="keyword">SET</span> UTF8;</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> aiuser@localhost <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'password'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> <span class="keyword">PRIVILEGES</span> <span class="keyword">ON</span> chattraindb .* <span class="keyword">TO</span> aiuser@localhost;</span><br><span class="line"></span><br><span class="line"><span class="keyword">FLUSH</span> <span class="keyword">PRIVILEGES</span>;</span><br></pre></td></tr></table></figure>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> install <span class="keyword">python</span>-mysqldb</span><br><span class="line"></span><br><span class="line"><span class="keyword">python</span> manage.<span class="keyword">py</span> migrate</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>安装 mongdb (略，参考官方文档 4）</li>
-<li>修改 chatterbot 配置</li>
-</ol>
-<figure class="highlight sml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">CHATTERBOT</span> = &#123;</span><br><span class="line">    <span class="symbol">'name'</span>: <span class="symbol">'Django</span> <span class="type">ChatterBot</span> <span class="type">Example'</span>,</span><br><span class="line">    <span class="symbol">'trainer'</span>: <span class="symbol">'chatterbot</span>.trainers.<span class="type">ChatterBotCorpusTrainer'</span>,</span><br><span class="line">    <span class="symbol">'training_data'</span>: [</span><br><span class="line">       <span class="symbol">'chatterbot</span>.corpus.english'</span><br><span class="line">    ], </span><br><span class="line">   <span class="symbol">'storage_adapter'</span>: <span class="symbol">'chatterbot</span>.storage.<span class="type">MongoDatabaseAdapter'</span>,</span><br><span class="line">   <span class="symbol">'database'</span>: <span class="symbol">'train</span>-sample',</span><br><span class="line">   <span class="symbol">'django_app_name'</span>: <span class="symbol">'django_chatterbot'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ol start="5">
-<li>安装 gunicorn，nginx</li>
-</ol>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo pip <span class="keyword">install</span> gunicorn</span><br><span class="line">sudo apt-<span class="keyword">get</span> <span class="keyword">install</span> nginx</span><br></pre></td></tr></table></figure>
-<p>然后进行systemd 配置</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">$ cat /etc/systemd/system/gunicorn.service</span><br><span class="line">[Unit]</span><br><span class="line"><span class="attribute">Description</span>=gunicorn daemon</span><br><span class="line"><span class="attribute">After</span>=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line"><span class="attribute">PIDFile</span>=/run/gunicorn/pid</span><br><span class="line"><span class="attribute">User</span>=kennan</span><br><span class="line"><span class="attribute">Group</span>=kennan</span><br><span class="line"><span class="attribute">RuntimeDirectory</span>=gunicorn</span><br><span class="line"><span class="attribute">WorkingDirectory</span>=/home/kennan/workRepo/ChatterBot/examples/django_app</span><br><span class="line"><span class="attribute">ExecStart</span>=/usr/local/bin/gunicorn  --pid /run/gunicorn/pid \</span><br><span class="line">            --bind unix:/run/gunicorn/socket  example_app.wsgi</span><br><span class="line"><span class="attribute">ExecReload</span>=/bin/kill -s HUP <span class="variable">$MAINPID</span></span><br><span class="line"><span class="attribute">ExecStop</span>=/bin/kill -s TERM <span class="variable">$MAINPID</span></span><br><span class="line"><span class="attribute">PrivateTmp</span>=<span class="literal">true</span></span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line"><span class="attribute">WantedBy</span>=multi-user.target</span><br></pre></td></tr></table></figure>
-<p>nginx 配置如下:</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">    <span class="section">server</span> &#123;</span><br><span class="line">        <span class="attribute">listen</span>          <span class="number">80</span>;</span><br><span class="line">        <span class="attribute">server_name</span>     kennan-box;</span><br><span class="line"></span><br><span class="line">        <span class="attribute">location</span>  /static/ &#123;</span><br><span class="line">            <span class="attribute">root</span> /home/kennan/workRepo/ChatterBot/examples/django_app/example_app;</span><br><span class="line">        &#125;   </span><br><span class="line"></span><br><span class="line">        <span class="attribute">location</span> / &#123;</span><br><span class="line">            <span class="attribute">proxy_pass</span>  http://unix:/run/gunicorn/socket;</span><br><span class="line">        &#125;   </span><br><span class="line">    &#125;   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>为了访问 80 端口，不会默认到 nginx 欢迎页面，需要删除默认配置</p>
-<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf  <span class="regexp">/etc/</span>nginx<span class="regexp">/sites-enabled/</span><span class="keyword">default</span></span><br></pre></td></tr></table></figure>
-<ol start="6">
-<li>nginx 生效，就能访问了， 效果如下：</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1613,7 +1584,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">252</span>
+                  <span class="site-state-item-count">253</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1626,7 +1597,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">32</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -1673,7 +1644,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

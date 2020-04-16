@@ -274,6 +274,144 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/05/16/ubuntu 14.04 运行devstack/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kai Qiang Wu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HackToday Walk Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2014/05/16/ubuntu 14.04 运行devstack/" itemprop="url">ubuntu 14.04 运行devstack</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-05-16T16:53:47+08:00">
+                2014-05-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>前段时间的ubuntu的14.04的发布，可谓一直就想试试新的用户体验，软件工程师要有尝试新鲜事物的精神是吧，不是“神精”</p>
+<p>下载iso，挂载virtualbox的新创建的虚拟机上，</p>
+<ol>
+<li>下载代码</li>
+</ol>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">https</span>://github.com/openstack-dev/devstack.git</span><br></pre></td></tr></table></figure>
+<p>这个是master的branch就是针对openstack Juno的分支</p>
+<ol start="2">
+<li>配置 （根据自己的环境配置相应的***地方）</li>
+</ol>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[[local|localrc]]</span></span><br><span class="line"><span class="attr">ENABLED_SERVICES</span>=<span class="string">"$ENABLED_SERVICES,-rabbit,-zeromq,qpid"</span></span><br><span class="line"><span class="attr">ENABLED_SERVICES</span>=<span class="string">"$ENABLED_SERVICES,-n-net,q-svc,q-agt,q-dhcp,q-l3,q-meta,q-metering,neutron,tempest"</span></span><br><span class="line"><span class="attr">ADMIN_PASSWORD</span>=***</span><br><span class="line"><span class="attr">MYSQL_PASSWORD</span>=***</span><br><span class="line"><span class="attr">SERVICE_PASSWORD</span>=<span class="variable">$ADMIN_PASSWORD</span></span><br><span class="line"><span class="attr">LOGFILE</span>=<span class="variable">$DEST</span>/logs/stack.sh.log</span><br><span class="line"><span class="attr">HOST_IP</span>=*****</span><br><span class="line"><span class="attr">KEYSTONE_CATALOG_BACKEND</span>=sql</span><br><span class="line"><span class="attr">SERVICE_TOKEN</span>=***</span><br><span class="line"></span><br><span class="line"><span class="attr">QPID_USERNAME</span>=***</span><br><span class="line"><span class="attr">QPID_PASSWORD</span>=***</span><br><span class="line"></span><br><span class="line"><span class="attr">FLOATING_RANGE</span>=***</span><br><span class="line"><span class="attr">FIXED_RANGE</span>=***</span><br><span class="line"><span class="attr">FIXED_NETWORK_SIZE</span>=**</span><br><span class="line"><span class="attr">FLAT_INTERFACE</span>=eth1</span><br><span class="line"><span class="attr">NETWORK_GATEWAY</span>=****</span><br><span class="line"><span class="attr">PUBLIC_NETWORK_GATEWAY</span>=***</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>运行</li>
+</ol>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./<span class="keyword">stack</span>.<span class="keyword">sh</span></span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>执行完毕，openstack的一切服务运行良好</li>
+</ol>
+<p>虽然devstack的主页没写支持ubuntu 14.04，但细细想想ubuntu多年前押宝到openstack，作为社区广泛流行的支持OS LTS的版本自然要相当重视，<br>应该是ubuntu团队对devstack贡献了不少代码，保证发布的14.04完美支持吧</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/04/19/SQL6031N在db2nodes.cfg文件上的出错/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1441,126 +1579,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/03/03/Ruby - 字符串占位符/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Kai Qiang Wu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HackToday Walk Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2014/03/03/Ruby - 字符串占位符/" itemprop="url">Ruby - 字符串占位符</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2014-03-03T23:08:12+08:00">
-                2014-03-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Ruby中的字符串占位符的替换值是操作字符串的常用方法，使用#进行变量或者ruby代码的求值，从而替换结果插入字符串中</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#/usr/bin/env  <span class="keyword">ruby</span></span><br><span class="line"></span><br><span class="line">book_mark = <span class="string">"znw123"</span></span><br><span class="line"># following replace <span class="built_in">and</span> <span class="keyword">insert</span></span><br><span class="line">puts <span class="string">"The book mark is #&#123;book_mark&#125;"</span></span><br><span class="line">#following run <span class="keyword">ruby</span> code, <span class="built_in">string</span> length <span class="built_in">and</span> <span class="keyword">insert</span></span><br><span class="line">puts <span class="string">"The book mark length is #&#123;book_mark.length&#125;"</span></span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1611,7 +1629,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">252</span>
+                  <span class="site-state-item-count">253</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1624,7 +1642,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">32</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -1671,7 +1689,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
